@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Contains install and uninstall functions for Simple Node Archive.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function sna_blocks_uninstall() {
+  variable_del('sna_blocks_block_types');
+  variable_del('sna_blocks_taxonomy_items');
+  variable_del('sna_blocks_items');
+  variable_del('sna_blocks_taxonomy_options');
+  variable_del('sna_blocks_custom_selection');
+  variable_del('sna_blocks_jquerymenu');
+}

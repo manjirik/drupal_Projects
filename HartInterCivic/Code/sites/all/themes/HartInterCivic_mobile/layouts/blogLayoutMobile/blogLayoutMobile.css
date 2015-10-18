@@ -1,0 +1,161 @@
+
+/*------------------------15 hart mobile blog index--*/
+.searchProducts{
+	border-top:	2px solid #de3633;
+	border-bottom:	2px solid #de3633;	
+	margin-top: 10px;
+	margin-bottom: 25px;	
+}
+
+.searchProducts form select{
+	margin:10px;
+}
+
+.searchProducts .jqTransformSelectWrapper{
+	margin-top:10px;
+	width: 100% !important;
+	float:none;
+}
+
+.jqTransformSelectWrapper div span,
+.jqTransformSelectWrapper ul{
+	width: 99.5% !important;	
+}
+
+.jqTransformSelectWrapper ul a{
+	padding-right:0px;	
+}
+
+.jqTransformSelectWrapper a.jqTransformSelectOpen{
+	background: url(../images/select_right.png) no-repeat center center transparent !important;	
+}
+
+.articleContent{
+	font-family:arial;	
+}
+
+.blogfooter{
+	border-bottom:	1px solid #de3633;	
+	padding-bottom: 19px;		
+}
+/*------------- -------------------------------*/
+
+#eventlist h2.pane-title,
+#latestnewslist h2.pane-title,
+#pressreleaselist h2.pane-title{
+	font-size: 24.5px;
+}
+/*
+.pane-latestnews h2{
+    color: inherit;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 24.5px;
+    margin: 10px 0;
+    text-rendering: optimizelegibility;}
+*/
+.views-row{
+	font-family: arial;
+}
+.views-row .views-field-created .field-content{
+	font-style: italic;
+	font-family: arial;
+}
+
+.views-row .views-field-comment-count .field-content{
+	font-style: normal;
+}
+
+.views-row .views-field-body .field-content{
+	margin-top: 20px;
+}
+.views-row .views-field-title h4{
+	font-weight: bold;
+	margin-top: 16px;
+	font-size: 16px;
+	margin-bottom: 0em;
+}
+
+.views-row .views-field-field-text-link1{
+	/*border-bottom: 1px solid #de3633;*/
+	padding-bottom: 19px;
+	margin-top: 1em;
+}
+
+.views-row .views-field-field-text-link1 a{
+    color: #4E84C4;
+    font-family: 'AvenirLT-Medium';
+    font-size: 1em;
+    margin-top: 1em;
+
+    
+}
+
+.views-field-field-external-url a{
+display: block;
+text-indent: -5000px;
+background: url("../images/ExternalImage.png") no-repeat scroll left center / 15px auto transparent;
+
+}
+.view-BlogList .views-row{
+border-bottom: 1px solid #f00;
+    margin-bottom: 1.375em;
+    padding-bottom: 1.25em;
+}
+
+#pressreleaselist,
+#latestnewslist{
+	font-family:arial;
+	padding:16px;
+}
+
+
+#latestnewslist .more-link{
+margin: 0;
+padding:16px 0;
+text-transform: uppercase;	
+}
+
+#latestnewslist .more-link a{
+border-top: 2px solid #de3633;
+border-bottom: 2px solid #de3633;
+font-size: 1em;
+display:block;
+line-height: 40px;
+text-align:left;
+color: #4e84c4;
+font-family:'AvenirLT-Roman';
+font-weight: bold;
+}
+
+.hartContainer .content .pane-content p{
+font-family: Georgia, "Times New Roman", Times, serif;
+color: #555759;
+font-size: 1.125em;
+margin-top: 10px;
+letter-spacing: 0.0625em;
+}
+
+.hartContainer .content .pane-content h1{ 
+font-family: 'AvenirLT-Roman';
+font-size: 1.5em;
+letter-spacing: 1px;
+line-height: 1.3em;
+}
+
+.pane-blogcategoryview, .pane-blogmonthlyarchive{
+	padding:16px;
+}
+.pane-blogcategoryview h2, .pane-blogmonthlyarchive h2{
+	font-size: 1.5em;
+}
+
+.view-blogcategoryview ul li, .view-BlogMonthlyArchive ul li{
+	padding-bottom: 10px;
+	color: #555759;
+	margin:0em;	
+}
+.view-blogcategoryview ul li a, .view-BlogMonthlyArchive ul li a{
+	color: #555759;
+}
+

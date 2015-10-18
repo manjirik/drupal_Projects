@@ -1,0 +1,194 @@
+/*---------------------Hart-Interior-Blog-Index.html dated- 22mar13--------------------------------*/
+
+.blogIndexContent h2,
+aside h2{
+	font-family: 'AvenirLT-Roman';
+	font-size:1.5em;
+	color:#555759;
+	margin-bottom:2em;
+	text-align:left;	
+	
+}
+
+aside ul li{
+	list-style:none;
+    font-family: 'AvenirLT-Roman';
+	font-size:0.9375em;
+	color:#555759;	
+	margin-bottom: 1.23em;	
+}
+
+.categories ul li{
+	font-weight:bold;
+}
+
+.item-list ul li{
+	margin: inherit;
+}
+
+.archives h2{
+	margin-top:1.875em;		
+}
+
+.archives ul li a{
+	margin-top:0.9375em;
+	font-style:italic;	
+	list-style:none;
+    font-family: 'AvenirLT-Roman';
+	font-size:0.9375em;
+	color:#555759;	
+	margin-bottom: 1.23em;
+}
+
+/*-------aside completes here-----------------*/
+
+.blogIndexContent .views-row{
+	padding-bottom:1.25em;
+	margin-bottom:1.375em;
+	 border-bottom: 1px solid #f00;
+}
+.blogIndexContent1 .views-row{
+	padding-bottom:1.25em;
+	margin-bottom:1.375em;
+	 border-bottom: 1px solid #f00;
+}
+.blogIndexContent1 h2{
+	font-family: 'AvenirLT-Roman';
+	font-size:1.5em;
+	color:#555759;
+	margin-bottom:2em;	
+	padding-top: 1em;
+	text-align:left;
+}
+
+.bottomSection .views-row{
+	padding-bottom:1.25em;
+	margin-bottom:1.375em;
+	border-bottom: 1px solid #D83632;
+}
+.blogIndexContent .views-field-title a, .blogIndexContent1 .views-field-title a{
+	font-size:0.9375em;
+	font-family:Arial;
+	color:#555759;
+	font-weight: bold;
+}
+.blogIndexContent .views-field-field-date, .views-field-comment-count{
+	font-size:0.9375em;
+	font-family:Arial;
+	color:#555759;
+	font-style:italic;
+	line-height: 1.5625em;
+	margin-bottom: 1.2em;	
+}
+.blogIndexContent .views-row .views-field-body p,.blogIndexContent1 .views-row .views-field-field-press-release-details p{
+	font-size:0.9375em;
+	font-family:Arial;
+	color:#555759;
+	margin-bottom: 1.5625em;
+	margin-top: 1.23em;	
+}
+.blogIndexContent h2 + article, .blogIndexContent1 h2 + article{
+	margin-top:2em;	
+}
+.blogIndexContent.bottomSection .subHeading{
+	margin-top:1em;
+	border-bottom: 1px solid #D83632;
+	padding-bottom: 1em;
+}
+.blogIndexContent.bottomSection h2{
+	margin-bottom:2em;	
+}
+.blogIndexContent .blogcontent{
+    margin-bottom: 0em;
+    padding-bottom: 0em;
+    border-bottom: 0 none;
+}
+
+
+.blogIndexContent1{
+   /* background: linear-gradient(to bottom, #F0F0F0 0%, #FFFFFF 12%, #FFFFFF 100%) repeat scroll 0 0 transparent;
+    float: left;
+    padding: 2.1em;
+    width: 63%;*/
+	 margin-right: 4px;
+	padding: 2.1em;
+}
+.blogIndexContent1 .blogcontent{
+    margin-bottom: 0em;
+    padding-bottom: 0em;
+    border-bottom: 0 none;
+}
+
+.views-row .views-field-title{
+	font-weight:bold;
+	color: #555759;
+       font-family: 'AvenirLT-Roman';
+       font-size: 0.9375em;
+	 font-style: normal;
+}
+
+
+.region .MiddleMainAreaWhite{
+    min-height: 92em;
+    width: 100%;
+
+}
+.views-row .views-field-field-external-url
+{
+/*	background-image: url(../images/electronic_voting.png); */
+}
+.views-row .views-field-field-external-url a{ 
+	display:block;
+	 text-indent: -5000px;
+	  background: url("../images/ExternalImage.png") no-repeat scroll left center / 15px auto transparent;
+}
+.views-row .views-field-field-external-url .abc{ display: inline-block; }
+
+.views-row .date-display-single{
+    color: #555759;
+    font-family: 'AvenirLT-Roman';
+    font-size: 0.9375em;
+    font-style: italic;
+    line-height: 1.5625em;
+}
+
+
+.newsCategories ul li a{
+   color: #555759;
+    font-family: 'AvenirLT-Roman';
+    font-size: 0.9375em;
+    list-style: none outside none;
+}
+
+.newsCategories ul li:first-child {
+    margin-top: 2.18em;
+}
+
+
+/*22-03-2013 NewsItem.html start*/
+.newsIteamTopSection {
+	margin-bottom: 1.5em;
+	overflow: hidden;
+}
+.newsIteamTopSection h2 {
+	/*font-size: 36px;
+	margin-bottom: 15px;*/
+	color: #666666;
+	font-family: 'AvenirLT-Medium';
+	font-size: 2.25em;
+	margin-bottom: 0.875em;
+    margin-top: 0.975em;
+	text-align: left;
+}
+.newsIteamTopSection p {
+	/*	font-size: 20px;
+	line-height: 30px*/
+	font-size: 1.25em;
+	line-height: 1.875rem;
+	font-family: Georgia;
+	color: #666666;
+	text-align: left;
+	margin: 0 auto;
+	width: 100%;
+	margin-bottom:1em;
+}

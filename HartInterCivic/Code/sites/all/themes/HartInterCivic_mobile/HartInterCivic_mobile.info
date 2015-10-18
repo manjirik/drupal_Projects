@@ -1,0 +1,62 @@
+name = HartInterCivic_mobile
+description = A flexible, recolorable theme with many regions.
+package = HartInterCivic_mobile
+version = VERSION
+core = 7.x
+
+
+stylesheets[all][] = bootstrap/css/bootstrap.min.css
+stylesheets[all][] = bootstrap/css/bootstrap-responsive.min.css
+stylesheets[all][] = js/jqtransformplugin/jqtransform.css
+stylesheets[all][] = js/jqtransformplugin/demo.css
+stylesheets[all][] = css/style-mobile.css
+stylesheets[all][] = css/main.css
+stylesheets[all][] = css/flexslider.css
+
+
+scripts[]=js/jquery1.9.js
+scripts[]=bootstrap/js/bootstrap.min.js
+scripts[]=js/cycle.js
+scripts[]=js/menuscript.js
+scripts[]=js/menuHartic.js
+scripts[]=js/jquery.flexslider.js
+scripts[]=js/slider.js
+scripts[]=js/jquery.flexslider-min.js
+scripts[]=js/event.js
+scripts[]=js/jqtransformplugin/jquery.jqtransform.js
+scripts[]=js/formelements.js
+
+plugins[panels][layouts] = layouts
+
+
+
+
+regions[header] = Header
+regions[help] = Help
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[highlighted] = Highlighted
+
+regions[featured] = Featured
+regions[content] = Content
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+
+regions[triptych_first] = Triptych first
+regions[triptych_middle] = Triptych middle
+regions[triptych_last] = Triptych last
+
+regions[footer_firstcolumn] = Footer first column
+regions[footer_secondcolumn] = Footer second column
+regions[footer_thirdcolumn] = Footer third column
+regions[footer_fourthcolumn] = Footer fourth column
+regions[footer] = Footer
+
+settings[shortcut_module_link] = 0
+
+
+; Information added by drupal.org packaging script on 2013-01-16
+version = "7.19"
+project = "drupal"
+datestamp = "1358374870"
+

@@ -1,0 +1,519 @@
+<?php
+
+/**
+ * @file
+ * Provide a simple node archive block
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function sna_blocks_menu() {
+  $items['admin/config/sna'] = array(
+    'title' => 'Simple Node Archive',
+    'description' => 'adjust node archive',
+    'position' => 'right',
+    'page callback' => 'system_admin_menu_block_page',
+    'access arguments' => array('simple node archive administer'),
+    'file' => 'system.admin.inc',
+    'file path' => drupal_get_path('module', 'system'),
+  );
+  $items['admin/config/sna/settings'] = array(
+    'title' => 'settings',
+    'description' => 'Select node type to show archive',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('sna_blocks_admin_settings'),
+    'access arguments' => array('simple node archive administer'),
+    'type' => MENU_NORMAL_ITEM,
+    'file' => 'sna_blocks.admin.inc',
+  );
+
+  return $items;
+}
+
+/**
+ * Implements hook_views_api().
+ */
+function sna_blocks_views_api() {
+  return array(
+    'api' => '3.0',
+    'path' => drupal_get_path('module', 'sna_blocks') . '/views',
+  );
+}
+
+/**
+ * Implements hook_permission().
+ */
+function sna_blocks_permission() {
+  return array(
+    'simple node archive administer' => array(
+      'title' => t('Simple Node Archives Administer'),
+      'description' => t('Configure the Simple Node Archives.'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function sna_blocks_block_info() {
+  // Node archive.
+  $block_types = variable_get('sna_blocks_block_types', array('page'));
+  foreach ($block_types as $type => $value) {
+    // Check the selected block types.
+    if ($value != '0') {
+      $blocks['sna-node-' . $value] = array(
+        'info' => t('Simple Node Archive - Node : @name', array('@name' => $value)),
+      );
+    }
+  }
+  // Taxonomy archive.
+  $taxonomy_options = variable_get('sna_blocks_taxonomy_options', array());
+  $taxonomy_archive = variable_get('sna_blocks_taxonomy_items', array());
+  foreach ($taxonomy_archive as $type => $value) {
+    // Check the selected block types.
+    if ($value != '0') {
+      $blocks['sna-taxo-' . $value] = array(
+        'info' => t('Simple Node Archive - Taxonomy : @name', array('@name' => $taxonomy_options[$value])),
+      );
+    }
+  }
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function sna_blocks_block_view($delta = '') {
+  $block = array();
+  $archive_items = variable_get('sna_blocks_items', 0);
+  $arg = explode('/', $_GET['q']);
+  $year = $arg[0] == 'sna' && $arg[1] != '' && is_numeric($arg[1]) ? $arg[1] : '';
+  $month = $arg[0] == 'sna' && $arg[2] != '00' && is_numeric($arg[2]) ? date('F', mktime(0, 0, 0, $arg[2])) : '';
+
+  // Node archive.
+  $block_types = variable_get('sna_blocks_block_types', array('page'));
+  foreach ($block_types as $type => $value) {
+    if ($delta == ('sna-node-' . $value)) {
+      $block['subject'] = t('SNA Node type @name', array('@name' => $value));
+      $block['content'] = theme('sna_blocks_node', array(
+        'value' => $value,
+        'archive_items' => $archive_items,
+        'year' => $year,
+        'month' => $month,
+        ));
+    }
+  }
+  // Taxonomy Archive.
+  $taxonomy_options = variable_get('sna_blocks_taxonomy_options', array());
+  $taxonomy_archive = variable_get('sna_blocks_taxonomy_items', array());
+  foreach ($taxonomy_archive as $type => $value) {
+    if ($delta == ('sna-taxo-' . $value)) {
+      $block['subject'] = t('SNA Taxonomy type @name', array('@name' => $taxonomy_options[$value]));
+      $block['content'] = theme('sna_blocks_taxonomy', array(
+        'value' => $value,
+        'archive_items' => $archive_items,
+        'year' => $year,
+        'month' => $month,
+        ));
+    }
+  }
+
+  return $block;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function sna_blocks_theme() {
+  return array(
+    'sna_blocks_node' => array(
+      'variables' => array(
+        'value' => NULL,
+        'archive_items' => NULL,
+        'year' => NULL,
+        'month' => NULL,
+      ),
+    ),
+    'sna_blocks_taxonomy' => array(
+      'variables' => array(
+        'value' => NULL,
+        'archive_items' => NULL,
+        'year' => NULL,
+        'month' => NULL,
+      ),
+    ),
+  );
+}
+
+/**
+ * Returns a chronological archive block for node type.
+ */
+function theme_sna_blocks_node($variables) {
+  $node_type = $variables['value'];
+  $archive_items = $variables['archive_items'];
+  $display_year = $variables['year'];
+  $display_month = $variables['month'];
+
+  // Get an associate array contain the results.
+  // Array([year(counter)] => Array([month(counter)] => Array([nid] => title)))
+  $results = _sna_blocks_resultset($node_type, 'node');
+  $html = _sna_blocks_archivehtml($results, $archive_items, $display_year, $display_month, $node_type, 'node');
+
+  return $html;
+}
+
+/**
+ * Returns a chronological archive block for node Vocabulary or Term.
+ */
+function theme_sna_blocks_taxonomy($variables) {
+  $taxonomy_value = $variables['value'];
+  $archive_items = $variables['archive_items'];
+  $display_year = $variables['year'];
+  $display_month = $variables['month'];
+  $taxonomy_options = variable_get('sna_blocks_taxonomy_options', array());
+  if (empty($taxonomy_options)) {
+    return t('No Content Posted.');
+  }
+  $tids = array();
+  // $taxonomy_value is a concatenated string
+  // Like V7 for Vocabilary or T7 for Term.
+  // Get term ids for Vocabulary.
+  if ($taxonomy_value[0] == 'V') {
+    $taxonomy_value = substr($taxonomy_value, 1);
+    $vocabilary_id = $taxonomy_value;
+    $terms = taxonomy_get_tree($vocabilary_id);
+    foreach ($terms as $term) {
+      $tids[$term->tid] = $term->tid;
+    }
+  }
+  elseif ($taxonomy_value[0] == 'T') {
+    $taxonomy_value = substr($taxonomy_value, 1);
+    $tids[$taxonomy_value] = $taxonomy_value;
+  }
+
+  $results = _sna_blocks_resultset($tids, 'terms');
+  $html = _sna_blocks_archivehtml($results, $archive_items, $display_year, $display_month, $tids, 'terms');
+
+  return $html;
+}
+
+/**
+ * Fectch the records from database and format to an associate array.
+ *
+ * @param string|array $value
+ *   String contain node machine name for node type archive block.
+ *   Array contain term ids for taxonomy archive block.
+ * @param string $type
+ *   Type of archive block 'node' or 'terms'.
+ *
+ * @return array
+ *   An associate arrry.
+ */
+function _sna_blocks_resultset($value, $type) {
+  global $language;
+  $archive = array();
+  // Select current user's language.
+  if (module_exists('locale')) {
+    $lang = $language->language;
+  }
+  else {
+    $lang = 'und';
+  }
+  if ($type == 'node') {
+    // Build the query for Node type archive.
+    $query = db_select('node');
+    $query->fields('node', array('nid', 'type', 'title', 'created'));
+    $query->condition('status', 1);
+    if ($value == 'custom') {
+      $custom_selection = variable_get('sna_blocks_custom_selection', array('page'));
+      foreach ($custom_selection as $k => $v) {
+        if ($v != '0') {
+          $condition[] = $v;
+        }
+      }
+      $query->condition('type', $condition, 'IN');
+    }
+    elseif ($value != 'all') {
+      $query->condition('type', $value);
+    }
+    $query->condition('language', $lang);
+    $query->orderBy('created', 'DESC');
+    $query->addTag('node_access');
+    $results = $query->execute()->fetchAll();
+
+  }
+  elseif ($type == 'terms') {
+    // Build query for taxonomy type archive.
+    $subquery = db_select('taxonomy_index', 'tn');
+    $subquery->addField('tn', 'nid');
+    $subquery->condition('tid', $value, 'IN');
+
+    $query = db_select('node');
+    $query->fields('node', array('nid', 'type', 'title', 'created'));
+    $query->condition('status', 1);
+    $query->condition('nid', $subquery, 'IN');
+    $query->condition('language', $lang);
+    $query->orderBy('created', 'DESC');
+    $query->addTag('node_access');
+    $query->addTag('term_access');
+    $results = $query->execute()->fetchAll();
+  }
+  else {
+    return $archive;
+  }
+
+  // Adding year and month field.
+  foreach ($results as $row) {
+    $archive[date('Y', $row->created)][date('F', $row->created)][$row->nid] = $row->title;
+  }
+  // Adding count field.
+  if (!empty($archive)) {
+    foreach ($archive as $year => $month) {
+      $year_count = 0;
+      foreach ($month as $key => $title) {
+        $count = count($title, COUNT_RECURSIVE);
+        $archive[$year][$key . ' (' . $count . ')'] = $archive[$year][$key];
+        unset($archive[$year][$key]);
+        $year_count += $count;
+      }
+      $archive[$year . ' (' . $year_count . ')'] = $archive[$year];
+      unset($archive[$year]);
+    }
+  }
+
+  return $archive;
+}
+
+/**
+ * Theme the result set to HTML.
+ *
+ * @param array $results
+ *   Associate array in format
+ *   Array([year(counter)] => Array([month(counter)] => Array([nid] => title)))
+ * @param string $archive_items
+ *   Number node to be shown in expanded archive.
+ * @param string $display_year
+ *   Which year to be shown in archive.
+ *   A full numeric representation of a year, 4 digit.
+ * @param string $display_month
+ *   Which month to be shown in arhive.
+ *   Numeric representation of a month, with leading zeros.
+ *
+ * @return string
+ *   An HTML string.
+ */
+function _sna_blocks_archivehtml($results, $archive_items, $display_year, $display_month, $values, $block_type) {
+  $output = t('No Content Posted.');
+  $view_taxo_arg = 'all';
+  $view_node_arg = 'all';
+
+  $use_jquerymenu = variable_get('sna_blocks_jquerymenu', 0);
+  if ($use_jquerymenu) {
+    $use_jquerymenu = $use_jquerymenu[1];
+  }
+
+  // Set taxonomy & node type argument for view.
+  if ($block_type == 'terms' && is_array($values)) {
+    if (count($values) == 1) {
+      $view_taxo_arg = key($values);
+    }
+    else {
+      $view_taxo_arg = implode('+', $values);
+    }
+  }
+  if ($block_type == 'node') {
+    $view_node_arg = $values;
+  }
+
+  // Need to find active block.
+  $arg = explode('/', $_GET['q']);
+  $active_block = FALSE;
+  if ($arg[0] == 'sna' && $block_type == 'node' && $arg[3] == $view_node_arg && $arg[4] == 'all') {
+    $active_block = TRUE;
+  }
+  $arg[4] = isset($arg[4]) ? str_replace(' ', '+', $arg[4]) : 0;
+  if ($arg[0] == 'sna' && $block_type == 'terms' && $arg[4] == $view_taxo_arg) {
+    $active_block = TRUE;
+  }
+
+  if ($node = menu_get_object()) {
+    $node_created = $node->created;
+    $display_year = date('Y', $node_created);
+    $display_month = date('F', $node_created);
+    if ($block_type == 'node') {
+      if ($values == 'all') {
+        $active_block = TRUE;
+      }
+      elseif ($values == 'custom') {
+        $node_types = variable_get('sna_blocks_custom_selection', array('page'));
+        if (isset($node_types[$node->type]) && $node_types[$node->type] != '0') {
+          $active_block = TRUE;
+        }
+      }
+      elseif ($node->type == $values) {
+        $active_block = TRUE;
+      }
+    }
+    elseif ($block_type == 'terms') {
+      $terms = _sna_blocks_nodeterms($node->nid);
+      if (!empty($terms)) {
+        foreach ($terms as $key => $value) {
+          if (in_array($key, $values)) {
+            $active_block = TRUE;
+          }
+        }
+      }
+    }
+  }
+
+  $year_items = $trail = array();
+  // Build the HTML.
+  if (!empty($results)) {
+    $theme_arr = array();
+    // Loop through earch year.
+    foreach ($results as $year => $months) {
+      $year_value = explode(' ', $year);
+      // $year_value[0] contain year value and $year_value[1] conatian count.
+      $year_url = 'sna/' . $year_value[0] . '/00/' . $view_node_arg . '/' . $view_taxo_arg;
+
+      // Check for active year branch and block.
+      $expand_year = $display_year == $year_value[0] && $active_block ? TRUE : FALSE;
+
+      $children_months = array();
+      // If Using Jquery Menu.
+      if ($use_jquerymenu) {
+        unset($year_item);
+        unset($month_items);
+        $year_item['link']['href'] = $year_url;
+        $year_item['link']['title'] = t($year_value[0]) . ' ' . $year_value[1];
+        $year_item['link']['has_children'] = 1;
+        $year_item['link']['expanded'] = 0;
+        $year_item['link']['options']['attributes'] = array();
+        $year_item['link']['hidden'] = 0;
+        if ($expand_year) {
+          $trail[0] = $year_item['link']['href'];
+        }
+        $expand_year = TRUE;
+      }
+
+      if ($expand_year) {
+        // Loop through active year and show month.
+        foreach ($months as $month => $nodes) {
+          $month_value = explode(' ', $month);
+          // $month_value[0] contain month and $month_value[1] conatian count.
+          $month_url = 'sna/' . $year_value[0] . '/' . date('m', strtotime($month_value[0], '1')) . '/' . $view_node_arg . '/' . $view_taxo_arg;
+
+          // Check for active month and block.
+          $expand_month = $display_year == $year_value[0] && $display_month == $month_value[0] && $active_block ? TRUE : FALSE;
+
+          $children_nodes = array();
+          // If Using Jquery Menu.
+          if ($use_jquerymenu) {
+            unset($month_item);
+            unset($node_items);
+            $month_item['link']['href'] = $month_url;
+            $month_item['link']['title'] = t($month_value[0]) . ' ' . $month_value[1];
+            $month_item['link']['has_children'] = 1;
+            $month_item['link']['expanded'] = 0;
+            $month_item['link']['options']['attributes'] = array();
+            $month_item['link']['hidden'] = 0;
+            if ($expand_month) {
+              $trail[0] = $year_item['link']['href'];
+              $trail[1] = $month_item['link']['href'];
+            }
+            $expand_month = TRUE;
+          }
+
+          if ($expand_month) {
+            $count = 1;
+            // Loop through acitive month and show node.
+            foreach ($nodes as $nid => $title) {
+              // If Using Jquery Menu.
+              if ($use_jquerymenu) {
+                unset($node_item);
+              }
+              // $archive_items number of nodes display in expanded archive.
+              if ($count <= $archive_items || $archive_items == 0) {
+                $children_nodes[] = l($title, 'node/' . $nid);
+                // If Using Jquery Menu.
+                if ($use_jquerymenu) {
+                  $node_item['link']['href'] = 'node/' . $nid;
+                  $node_item['link']['title'] = $title;
+                  $node_item['link']['has_children'] = 0;
+                  $node_item['link']['expanded'] = 0;
+                  $node_item['link']['options']['attributes'] = array();
+                  $node_item['link']['hidden'] = 0;
+                }
+              }
+              $count = $count != 0 ? $count + 1 : 0;
+
+              // If Using Jquery Menu.
+              if ($use_jquerymenu) {
+                $node_items[] = $node_item;
+              }
+            }
+
+            // If Using Jquery Menu.
+            if ($use_jquerymenu) {
+              $month_item['below'] = $node_items;
+              $month_items[] = $month_item;
+            }
+          }
+          $children_months[] = array(
+            'data' => l(t($month_value[0]), $month_url) . '&nbsp;<span>' . $month_value[1] . '</span>',
+            'children' => $children_nodes,
+          );
+        }
+
+        // If Using Jquery Menu.
+        if ($use_jquerymenu) {
+          $year_item['below'] = $month_items;
+          $year_items[] = $year_item;
+        }
+      }
+      $theme_arr[] = array(
+        'data' => l(t($year_value[0]), $year_url) . '&nbsp;<span>' . $year_value[1] . '</span>',
+        'children' => $children_months,
+      );
+    }
+
+    // If Using Jquery Menu.
+    if ($use_jquerymenu) {
+      $output = theme('jquerymenu_menu', array('tree' => $year_items, 'trail' => $trail));
+    }
+    else {
+      $output = theme('item_list', array('items' => $theme_arr));
+    }
+  }
+  else {
+    // Term is not tagged with any node.
+    $output = t('No posts available');
+  }
+
+  return $output;
+}
+
+/**
+ * Get the list terms that are tagged in a Node.
+ *
+ * @param int $nid
+ *   Node id.
+ *
+ * @return array
+ *   Array cotaining the list of terms.
+ */
+function _sna_blocks_nodeterms($nid) {
+  $terms = array();
+  $query = db_select('node', 'N');
+  $query->addJoin('INNER', 'taxonomy_index', 'T', 'N.nid = T.nid');
+  $query->addJoin('INNER', 'taxonomy_term_data', 'TD', 'T.tid = TD.tid');
+  $query->fields('T', array('tid'));
+  $query->fields('TD', array('name'));
+  $query->condition('N.nid', $nid);
+  $query->addTag('node_access');
+  $query->addTag('term_access');
+
+  return $query->execute()->fetchAllKeyed();
+}

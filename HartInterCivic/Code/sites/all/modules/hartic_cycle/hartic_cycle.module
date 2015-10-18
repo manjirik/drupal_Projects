@@ -1,0 +1,167 @@
+<?php
+/*
+* This module retuens data when cycle_information path is requested by Cycle_information page.
+*/
+
+
+function hartic_cycle_menu() {
+    $items['cycle_information'] = array(
+      'page callback' => 'hartic_cycle_view',
+	  'acces callback' => true,
+	  'access arguments' => array('access content')
+    );
+    $items['cycle_information_mobile'] = array(
+      'page callback' => 'hartic_cycle_mobile_view',
+	  'acces callback' => true,
+	  'access arguments' => array('access content')
+    );
+
+   
+
+    return $items;
+  }
+
+function hartic_cycle_view() {
+	
+	$term_name1 = $_GET['t1'];
+    $term_name2 = $_GET['t2'];
+	$query = db_select('taxonomy_term_data', 'ttd');
+	$or_statement = db_or()->condition('ttd.name',$term_name1,'=')->condition('ttd.name',$term_name2,'=');
+	$query->condition($or_statement);
+	$query->fields('ttd', array('tid'));
+	$result = $query->execute();
+	$term_id = array();
+	
+	
+	foreach ($result as $record) {
+	 $term_id[] = $record->tid;
+	}
+	
+	
+	$term_implode = implode(',',$term_id);
+	//$query2 = 'Select distinct(nid) from taxonomy_index as ti , taxonomy_term_data as ttd where ttd.tid=ti.tid and ti.tid in('.$term_implode.')'; 
+	$query2 = 'SELECT * FROM node INNER JOIN taxonomy_index AS tn ON node.nid = tn.nid WHERE tn.tid IN ('.$term_implode.') GROUP BY node.nid HAVING count(*) = 2';
+	$result2 = db_query($query2);
+	
+	
+	$term_nid = array();
+	
+	foreach ($result2 as $record2) {
+	 $term_nid[] = $record2->nid;
+	}
+	//print_r($term_nid);
+	
+	$term_nid_implode = implode(',',$term_nid);
+	//print_r($term_nid_implode);
+	$query3 ="SELECT field_tab_label_value,body_value FROM node,field_data_body,field_data_field_tab_label,field_data_field_order_by WHERE nid in(".$term_nid_implode.")and node.nid = field_data_body.entity_id and node.nid = field_data_field_tab_label.entity_id and node.nid = field_data_field_order_by.entity_id and node.type ='cycle_phase' ORDER BY field_data_field_order_by.field_order_by_value " ;	
+	
+	$result3 = db_query($query3);
+	$result4 = db_query($query3);
+	
+	$i = 0;
+	$data_result = array();
+$data =<<<STR
+<div class="benifit1withListing overHidden">
+        <div class="menuListing left">
+          <ul class="dynamic">
+STR;
+
+	foreach ($result3 as $record3) {
+		//$data_result[title][] = $record3->title;
+		//$data_result[body_value][] = $record3->body_value;
+	
+$data .=<<<STR
+            <li class="get_content" get_value='$record3->body_value '><a href="javascript:void(null);">{$record3->field_tab_label_value}</a></li>
+          
+STR;
+}		  
+$data .=<<<STR
+		</ul>
+        </div>
+STR;
+
+	foreach ($result4 as $record4) {
+	if ($i == 0 ){
+	$data .=<<<STR
+        <div class="benifit1withTextMain left">
+          {$record4->body_value}
+          </div>
+STR;
+}
+$i++;
+}
+$data .=<<<STR
+        </div>
+      </div>
+
+STR;
+	//echo $data;
+	//print_r($data_result);
+	echo json_encode($data);
+}
+
+
+function hartic_cycle_mobile_view() {
+	
+	$term_name1 = $_GET['t1'];
+    $term_name2 = $_GET['t2'];
+	$query = db_select('taxonomy_term_data', 'ttd');
+	$or_statement = db_or()->condition('ttd.name',$term_name1,'=')->condition('ttd.name',$term_name2,'=');
+	$query->condition($or_statement);
+	$query->fields('ttd', array('tid'));
+	$result = $query->execute();
+	$term_id = array();
+	
+	
+	foreach ($result as $record) {
+	 $term_id[] = $record->tid;
+	}
+	
+	
+	$term_implode = implode(',',$term_id);
+	$query2 = 'SELECT * FROM node INNER JOIN taxonomy_index AS tn ON node.nid = tn.nid WHERE tn.tid IN ('.$term_implode.') GROUP BY node.nid HAVING count(*) = 2';
+	$result2 = db_query($query2);
+	
+	
+	$term_nid = array();
+	
+	foreach ($result2 as $record2) {
+	 $term_nid[] = $record2->nid;
+	}
+	
+	$term_nid_implode = implode(',',$term_nid);
+	$query3 ="SELECT field_tab_label_value,body_value FROM node,field_data_body,field_data_field_tab_label,field_data_field_order_by WHERE nid in(".$term_nid_implode.")and node.nid = field_data_body.entity_id and node.nid = field_data_field_tab_label.entity_id and node.nid = field_data_field_order_by.entity_id and node.type ='cycle_phase' ORDER BY field_data_field_order_by.field_order_by_value " ;	
+	
+	
+	$result3 = db_query($query3);
+	$result4 = db_query($query3);
+	
+	$i = 0;
+	$data_result = array();
+
+$data_list =<<<STR
+STR;
+	foreach ($result3 as $record3) {
+		
+	
+$data_list .=<<<STR
+		 <div class="accordion-inner list" get_value='$record3->body_value' ><a href="javascript:void(0);"  >{$record3->field_tab_label_value}</a></div>
+
+
+          
+STR;
+}
+
+	foreach ($result4 as $record4) {
+	if ($i == 0 ){
+	$data_value .=<<<STR
+        <div class="benifit1withTextMain left">
+          {$record4->body_value}
+          </div>
+STR;
+}
+$i++;
+}
+	$cycle_phase = array ("data_list" => $data_list,"data_value" => $data_value);
+	echo json_encode($cycle_phase);
+}

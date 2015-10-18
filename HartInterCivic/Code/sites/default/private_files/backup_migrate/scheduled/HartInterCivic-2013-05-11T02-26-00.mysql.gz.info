@@ -1,0 +1,8 @@
+filename = "HartInterCivic-2013-05-11T02-26-00"
+description = ""
+datestamp = "1368219361"
+generator = "Backup and Migrate (http://drupal.org/project/backup_migrate)"
+generatorversion = "7.x-2.x"
+sites[0][version] = "7.19"
+sites[0][name] = "Hart InterCivic"
+sites[0][url] = "http://50.56.201.199/hartic/"

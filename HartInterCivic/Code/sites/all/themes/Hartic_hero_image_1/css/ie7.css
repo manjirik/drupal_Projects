@@ -1,0 +1,274 @@
+header, nav, section, article, aside, footer, hgroup {
+	display: block;
+}
+.HeaderTopArea nav ul li {
+	line-height: 1.25em;
+}
+.TopContentArea h1 {
+	line-height: 1.1em;
+}
+.TopContentArea p {
+	line-height: 1.3em;
+}
+.MidTopContentArea p {
+	line-height: 1.8em;
+}
+.MidBottompSection p a {
+	line-height: 1em;
+}
+.MidBottompSection p {
+	line-height: 1.25em;
+}
+.FooterColumn1 ul li a {
+	line-height: 1.375em;
+}
+.FooterColumn2 p {
+	line-height: 1.375em;
+}
+.FooterColumn2 ul li a {
+	line-height: 1.375em;
+}
+.FooterColumn3 ul {
+	list-style: none;
+}
+.FooterColumn3 ul li a {
+	line-height: 1.375em;
+}
+.FooterColumn4 p {
+	line-height: 1.375em;
+}
+.FooterColumn4 ul {
+	list-style: none;
+}
+.FooterColumn4 ul li a {
+	line-height: 1.375em;
+}
+.FooterBottomPart {
+	line-height: 2.8125em;
+}
+.secondoryMenuWrap ul li {
+	line-height: 0.875em;
+}
+.secondoryMenuWrap span {
+	font-size: 0.875em;
+}
+.MidTopSection h1 {
+	font-size: 2.25em;
+}
+.MidTopContentArea p {
+	line-height: 1.875em;
+}
+.MidTopSectionWhite p {
+	line-height: 1.375em;
+}
+.votingWrap p {
+	line-height: 1.25em;
+}
+.votingWrap p {
+	line-height: 1.25em;
+}
+.MidTopContentArea p {
+	line-height: 1.875em;
+}
+.MidBottompSection p a {
+	line-height: 1em;
+}
+.MidBottompSection p {
+	line-height: 1.25em;
+}
+.MidBottompEnd {
+	line-height: 7.25em;
+}
+.FooterColumn1 ul li a {
+	line-height: 1.375em;
+}
+.FooterColumn2 p {
+	line-height: 1.375em;
+}
+.FooterColumn2 ul li a {
+	line-height: 1.375em;
+}
+.FooterColumn3 ul li a {
+	line-height: 1.375em;
+}
+.FooterColumn4 p {
+	line-height: 1.375em;
+}
+.FooterColumn4 ul li a {
+	line-height: 1.375em;
+}
+.FooterBottomPart {
+	line-height: 2.8125em;
+}
+.MidInteTopContentArea h1 {
+	line-height: 1.05em;
+}
+.MidInteTopContentArea p {
+	line-height: 1.475em;
+	margin-bottom: 0;
+}
+.MidInteWrapperMiddleNav ul li {
+	line-height: 1.125em;
+}
+.newsIteamTopSection p {
+	line-height: 1.575em;
+}
+.NewsTextImage p {
+	line-height: 1.125em;
+}
+.NewsTextImage ul li {
+	line-height: 1.4375em;
+}
+.blue {
+	line-height: 1.125em;
+}
+.interiorBlogArticle p {
+	line-height: 1.125em;
+}
+.interiorBlogArticle ul li {
+	line-height: 1.4375em;
+}
+.MidVotingTopContentArea h1 {
+	line-height: 1.25em;
+}
+.MidVotingTopContentArea p {
+	line-height: 1.275em;
+}
+.design2 h2 {
+	line-height: 2.25em;
+}
+.design3 h2 {
+	line-height: 1.2em;
+}
+.benifit1withTextImage p a {
+	line-height: 1em;
+}
+/*--------mukesh stylesheet for ie8 start----------*/
+.secondoryMenuWrap ul li {
+	line-height: normal;
+}
+
+.ProductTypebutton{
+	*width:11.9em;	
+}
+/*--------mukesh stylesheet for ie8 end----------*/
+.view-product-detail .view-filters{
+	background: url("../images/gradientTop.png") repeat-x scroll center center transparent;
+}
+
+
+.view-product-detail .item-list {
+	background: url("../images/gradientBottom.png") repeat-x scroll center center transparent;
+}
+
+.views-widget .form-text {
+	line-height:2em;
+	vertical-height:middle;
+}
+
+#views-exposed-form-product-detail-page .views-submit-button{
+	padding-right:0;
+	padding-top:11px;
+}
+
+.HeaderTopArea nav UL LI UL{
+	margin-top:-9px;
+	margin-left:-171px;
+}
+
+.HeaderTopArea nav UL LI.menu-729 UL{
+	margin-left:-212px;
+	
+}
+
+.HeaderTopArea nav UL LI.menu-731 UL{
+	margin-left:-143px;	
+}
+
+.HeaderTopArea nav UL LI.menu-1041 UL{
+	margin-left:-121px;	
+}
+
+.secondaryMenuWrap ul li a{
+	float:none;
+}
+
+.bottom,
+.MidInteWrapperMiddleNav {
+	background:url("../images/benefitBg.png") repeat-x scroll 0 0 transparent;
+	height:39px;
+}
+
+.MidInteWrapperMiddle .benifit1{
+	background:url("../images/doubleGradientBenefit.png") repeat-x scroll 0 0 #f8f8f8;
+	/*filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f0f0', GradientType=0 );
+	zoom:1;*/
+}
+
+ul.votingProductlisting li{
+	list-style:none;
+	float:left;
+}
+
+ul.votingProductlisting li:first-child{
+	padding-left:30px;
+}
+/*
+#nice-menu-1 ul li:first-child{
+	border-top:none;
+}*/
+
+#nice-menu-1 ul li{
+	position:inherit;	
+}
+
+.votingBig .middleImage {	
+	top: 13.5em;
+}
+
+#block-block-16 .content p {
+	line-height: 1.875em
+}
+.MidBottompSection .div1 {
+	padding-bottom: 2.875em;
+}
+.NoLine h3 {
+	margin-top: 2em;
+}
+.FooterColumn1 ul li a {
+	line-height: 1.87em;
+}
+.FooterColumn2 ul li a {
+	line-height: 1.87em;
+}
+.FooterColumn3 ul li a {
+	line-height: 1.87em;
+}
+.FooterColumn4 p {
+	line-height: 1.87em;
+}
+.MiddleMainArea {
+	background-image: url("../images/MidAreaBg.jpg");
+	background-position: left top;
+	background-repeat: repeat-x;
+	background-color: #ffffff;
+}
+.MidInteWrapperTop {
+	margin-bottom: 4em;
+}
+.field-content .main-menu-active {
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: normal;
+}
+.secondaryMenuWrap ul li a {
+	line-height: 16px;
+	font-size: 14px;
+}
+.secondaryMenuWrap span {
+	font-size: 0.97em;
+}
+.bottomBreadCrum {
+	padding-left: 0px;
+	margin-top: -7px;
+}

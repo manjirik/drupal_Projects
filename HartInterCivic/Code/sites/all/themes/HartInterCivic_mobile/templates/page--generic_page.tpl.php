@@ -1,0 +1,104 @@
+<?php
+global $base_path;
+global $theme_path;
+?>
+<div class="container"><!-- container start --> 
+  <!--Header-->
+  <header> 
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#PrimaryNav"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="menu">Menu</span> </button>
+           <a class="brand" href="<?php echo $base_path; ?>"><img src="<?php print $base_path.''.$theme_path; ?>/images/mobile-logo.png" alt="logo"></a>
+
+          <div id="PrimaryNav" class="nav-collapse collapse">
+            <ul class="nav">
+				<?php print render($page['header']); ?>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- voting Environment Sub Menu
+    ================================================== -->
+    <div class="home_image">
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+           <div class="container SecondaryNavigation"> <a class="btn-navbar new-navbar" data-toggle="collapse" data-target="#SecondaryNav">+</a>
+		<span><a class="btn-navbar new-navbar" data-toggle="collapse" data-target="#SecondaryNav">-</a></span>
+	   <a class="brand secondaryMenu" href="#"><?php print $node->title; ?></a>
+            <div class="clearfix"></div>
+            <div id="SecondaryNav" class="nav-collapse subnav-collapse collapse">
+              <ul class="nav">
+               	<?php
+			$len_subpage=sizeOf($node->field_subpage['und']);
+			for($p=0; $p<$len_subpage; $p++ ){
+				$nid=$node->field_subpage['und'][$p]['nid'];
+				$ntitle=$node->field_subpage['und'][$p]['node']->title;
+				$alias=drupal_get_path_alias('node/'.$nid); 
+			?>
+				<li><a href="<?php  print $base_path .$alias; ?>" ><?php echo $ntitle; ?></a></li>
+			<?php } ?>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--header end-->
+  <section class="hartContainer"><!--section hartcontainer starts-->
+    <article class="content">
+      <div class="taglineInner"><?php if(!empty($node->field_generic_headline['und'][0]['value'])) echo $node->field_generic_headline['und'][0]['value']; ?></div>
+      <div id="taglineDescription"><?php if($node->body['und'][0]['value'] !='') echo ($node->body['und'][0]['value']); ?></div>
+    </article>
+  </section><!-- end of section hart container-->
+  <section class="productOverview">
+  	<article class="productContent">
+        <?php if($node->field_details_description['und'][0]['value'] !='' ) echo $node->field_details_description['und'][0]['value']; ?>    </article><!--end of 1st article product-->
+   
+  </section>
+
+  <section class="hartContainer">
+  <!--============CTA BLOCK=====================-->
+	
+	        
+    <!--Connect with block-->
+	<div class="ConnectWith"> <?php print_r($page['content']['block_3']['#markup']); ?> </div>
+
+  </section><!--section hartcontainer ends here-->
+
+  <footer><!--footer main starts-->
+      <section class="hartContainer">
+	 <?php if ($page['footer_firstcolumn'] || $page['footer_secondcolumn'] || $page['footer_thirdcolumn'] || $page['footer_fourthcolumn']): ?>
+		 <div class="footerTitle"> </div>
+		 <ul class="footerListing">
+		  <?php print render($page['footer_firstcolumn']); ?>
+		  </ul>
+		     	
+        <ul class="footerListing">
+        	 <?php print render($page['footer_secondcolumn']); ?>
+        </ul>
+    	
+        <ul class="footerListing">
+        	<?php print render($page['footer_thirdcolumn']); ?>
+        </ul>
+    	
+	<ul class="footerListing">
+            <!--<li>News & Events</li>
+            <li>Our Blog</li>-->
+			<?php print render($page['footer_fourthcolumn']); ?>
+        </ul>
+		 <?php endif; ?>
+        <hr/>
+    </section>    
+
+ <div class="copyright"><?php print render($page['footer']); ?></a>  </div>
+
+
+  </footer>
+  <!-- main footer ends--> 
+</div>
+<!-- container end -->
