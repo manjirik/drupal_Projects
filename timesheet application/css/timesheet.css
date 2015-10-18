@@ -1,0 +1,233 @@
+body 
+{
+	margin:0;
+	font-family:verdana;	
+	background-color:#F8F6B6;
+}
+
+td {
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+th {
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+form {
+	font-family: Verdana;
+	font-size: 12px;
+	}
+
+input {
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+textarea {
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+select {
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+ul {
+	font-family: Verdana;
+	font-size: 12px;
+	list-style-type: disc;
+	list-style-position: outside;
+}
+
+li {
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+ol {
+	font-family: Verdana;
+	font-size: 12px;
+	list-style-type: upper-roman;
+	list-style-position: outside;
+}
+.sucDiv
+{
+	border:1px dotted #0B6103;
+	background-color:#D5F7D2;
+	padding:2px;
+	color:#0C3B08;
+}
+.errDiv
+{
+	border:1px dotted #FA0505;
+	background-color:#F7CDCD;
+	padding:2px;
+	color:#FA0505;
+}
+.tdHwidth1
+{
+	width:10px;
+}
+.tdHwidth2
+{
+	width:5px;
+}
+.button
+{
+	font-family: Verdana;
+	font-size: 12px;
+	border:1px solid;
+}
+.trHeight1
+{
+	height:15px;
+}
+.trHeight2
+{
+	height:7px;
+}
+.trHeight3
+{
+	height:20px;
+}
+a
+{
+	text-decoration:none;
+	color:#45210E;
+}
+a:hover
+{
+	color:#000000;
+	text-decoration:underline;
+}
+.tDiv
+{
+	background-color:#CC9933; 
+	padding:10px;
+	display:none;
+}
+.tYearDiv
+{
+	background-color:#CC9933; 
+	padding:10px;
+	display:none;
+}
+.tListDiv
+{
+	background-color:#CC9933; 
+	padding:10px;
+	display:none;
+}
+.logoDiv
+{		
+	background-color:#CC9933;
+	padding:12px;
+	display:none;
+}
+.titleDiv
+{
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+	background-color:#CC9933; 
+	padding:10px;
+	display:none;
+}
+.dateDiv
+{
+	background-color:#8C5F11; 	 
+	padding:6px;
+}
+.dateOffDiv
+{
+	background-color:#A17A2B;
+	padding:6px;
+}
+.tActMonthDiv
+{
+	background-color:#A17A2B; 
+	padding:6px;
+	font-weight:bold;
+}
+.tMonthDiv
+{
+	background-color:#D9B46A; 
+	padding:6px;
+	font-weight:normal;
+}
+.timeDiv
+{
+	background-color:#D9B46A; 
+	padding:6px;
+}
+.taskDiv
+{
+	background-color:#F5D087; 
+	padding:10px;
+}
+.header
+{
+	height:40px;
+	background-color:#FFCC00;
+	padding:5px;
+}
+.headerText
+{
+	font-size:36px;
+	font-weight:bold;
+	font-style:italic;
+}
+.headerSpace
+{
+	width:30px;
+}
+.smallSpacerWidth
+{
+	width:1%;
+}
+.monthName
+{
+	font-weight:bold;
+	font-size:14px;
+}
+.formErrMsg
+{
+	border:1px dotted #FA0505;
+	background-color:#F7CDCD;
+	padding:2px;
+	color:#FA0505;
+	margin-top:4px;
+	display:none;
+}
+.formErrMsg1
+{
+	border:1px dotted #FA0505;
+	background-color:#F7CDCD;
+	padding:2px;
+	color:#FA0505;
+	margin:5px;
+	display:none;
+	width:30%;
+}
+.prjText
+{
+	color:#663300;
+	font-weight:bold;
+}
+.astrix
+{
+	color:#CC0000;
+}
+.topMsgDiv
+{
+	background-color:#CC9933; 
+	padding:6px;
+	font-weight:normal;
+	width:110px;	
+	position: absolute;
+    top: 0px;
+    left: 50%;
+}

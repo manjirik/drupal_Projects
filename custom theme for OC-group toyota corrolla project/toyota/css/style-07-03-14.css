@@ -1,0 +1,258 @@
+/*-------------Author: Synechron ------------*/
+/* Reset YUI*/
+html, body {height: 100%;}
+body {margin:0; padding:0; background:#00bff3 url(../images/body-bg.jpg); color:#000; font:normal 10px Arial; background-attachment: fixed;}
+p{margin:0; padding:0;}
+h1,h2,h3,h4,h5,h6 {margin:0; padding:0;}
+h1 {margin:0; padding:0;}
+h2 {margin:0; padding:0;}
+h3 {margin:0; padding:0;}
+h4 {margin:0; padding:0;}
+h5 {margin:0; padding:0;}
+h6 {margin:0; padding:0;}
+img {border:0;}
+a {outline:none;}
+ul li{list-style-type:none; margin:0; padding:0;display:inline;}
+.left {float:left;}
+.right{float:right;}
+.clear{clear:both;}
+.float_none {float:none;}
+.vmid {vertical-align:middle;}
+.pdlft5{padding-left:5px;}
+.pdlftbtm {padding-left:125px; padding-bottom:20px;}
+.mrgbtm150 {margin-bottom:150px;}
+.rgt30 { right:30px;}
+@font-face {
+    font-family: 'fineliner_scriptregular';
+    src: url('../includes/fonts/fineliner_script-webfont.eot');
+    src: url('../includes/fonts/fineliner_script-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../includes/fonts/fineliner_script-webfont.woff') format('woff'),
+         url('../includes/fonts/fineliner_script-webfont.ttf') format('truetype'),
+         url('../includes/fonts/fineliner_script-webfont.svg#fineliner_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'helvetica_ce_35_thinregular';
+    src: url('../includes/fonts/helvetica_neue_ce_35_thin-webfont.eot');
+    src: url('../includes/fonts/helvetica_neue_ce_35_thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../includes/fonts/helvetica_neue_ce_35_thin-webfont.woff') format('woff'),
+         url('../includes/fonts/helvetica_neue_ce_35_thin-webfont.ttf') format('truetype'),
+         url('../includes/fonts/helvetica_neue_ce_35_thin-webfont.svg#helvetica_ce_35_thinregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*----------------------------------------------Styles for Basic Structure--------------------------------------------------*/
+
+.cloud_fix {top:0px; /*position:fixed;*/ position:absolute; background:url(../images/img-clouds.png); /*width:1600px;*/ width:100%; height:561px;  background-position:center;}
+.wrapper {margin:0 auto; width:960px; min-height:100%; overflow:auto; padding-bottom:251px; /* same height as the footer */ /*z-index:1;*/ position:relative;}
+.header {padding-top:14px; position:relative; background:url(../images/header-bg.png) no-repeat; width:960px; height:90px;}
+.header .logo {padding-left:95px;}
+.menu {float:left; padding-left:135px;}
+.menu a{padding-right:40px; width:110px; font-family:"helvetica_ce_35_thinregular"; font-weight:normal; font-size:28px; color:#000; text-decoration:none; float:left; line-height:24px;}
+.menu a:hover {text-decoration:none; color:#000;}
+.menu span {font:normal 15px Arial; color:#000;}
+.share_block {float:left; padding-top:13px;}
+.share_block span {float:left; padding-top:3px; font-size:14px; color:#000;}
+.share_block span a {text-decoration:none; color:#000;}
+.share_block span a:hover {text-decoration:none; color:#000;}
+.share_block a > img {text-align:right; padding-left:6px;}
+
+/*------------ start container --------------- */
+
+.container {float:left;}
+.video_block {float:left;}
+.video 
+{
+float:left;
+margin-left:165px; 
+-webkit-box-shadow:20px 20px 20px 0px rgba(106, 106, 106, 0.75);
+-moz-box-shadow:20px 20px 20px 0px rgba(106, 106, 106, 0.75);
+box-shadow:20px 20px 20px 0px rgba(106, 106, 106, 0.75);
+} 
+.video_block h1 {font-family:"fineliner_scriptregular"; font-weight:normal; font-size:40px; width:960px; text-align:center; margin-top:15px;}
+.video_block p {margin:15px 0 0 74px; background-color:#fff; text-align:center; font-family:"helvetica_ce_35_thinregular"; font-weight:normal; font-size:14px; padding:15px;}
+.video_block_list {float:left; padding-top:25px;}
+.video_block_list ul {margin:0; padding:0; float:left;}
+.video_block_list ul li {float:left; width:96px;}
+.video_block_list ul li > img {margin-bottom:5px; text-align:center;}
+.video_block_list ul li a { display:block; color:#005b7f; font-family:"helvetica_ce_35_thinregular"; font-weight:normal; font-size:18px; text-align:center; text-decoration:none; text-shadow: 4px 3px 2px rgba(255, 255, 255, 1);}
+.video_block_list ul li a:hover  {text-decoration:none; color:#005b7f;}
+
+/*---------------- styles for infographic page----------------- */
+.container .infographic {float:left; padding-top:32px; position:relative;}
+.container .infographic p {font-size:14px; text-align:center; width:960px;}
+.container .infographic .milestones {position:absolute; top:87px; left:22px; z-index:1;}
+.container .infographic .milestones_txt {position:absolute; top:413px; left:95px; background:url(../images/milestones-bg.png) no-repeat; width:135px; height:44px; font-family:"fineliner_scriptregular"; font-size:34px; font-weight:normal; color:#000;}
+.container .infographic .milestones_txt a {font-family:"fineliner_scriptregular"; font-size:34px; font-weight:normal; text-decoration:none; color:#000; display:block; padding:3px 0 0 7px;}
+.container .infographic .milestones_txt a:hover {text-decoration:none; color:#ff0000;}
+.container .infographic .milestones_txt a.active{color:#ff0000;}
+
+.container .infographic .trivia {position:absolute; left:308px; top:74px;}
+.container .infographic .trivia_txt {position:absolute; top:416px; left:438px; background:url(../images/trivia-bg.png) no-repeat; width:84px; height:42px; font-family:"fineliner_scriptregular"; font-size:34px; font-weight:normal; color:#000;}
+.container .infographic .trivia_txt a {font-family:"fineliner_scriptregular"; font-size:34px; font-weight:normal; text-decoration:none; color:#000; display:block; padding:3px 0 0 7px;}
+.container .infographic .trivia_txt a:hover {text-decoration:none; color:#ff0000;}
+.container .infographic .trivia_txt a.active{color:#ff0000;}
+
+.container .infographic .history {position:absolute; top:70px; left:613px;}
+.container .infographic .history_txt { position:absolute; top:415px; left:718px;}
+
+.container .infographic .history_txt {position:absolute; top:415px; left:718px; background:url(../images/history-bg.png) no-repeat; width:96px; height:51px; font-family:"fineliner_scriptregular"; font-size:34px; font-weight:normal; color:#000;}
+.container .infographic .history_txt a {font-family:"fineliner_scriptregular"; font-size:34px; font-weight:normal; text-decoration:none; color:#000; display:block; padding:3px 0 0 7px;}
+.container .infographic .history_txt a:hover {text-decoration:none; color:#ff0000;}
+.container .infographic .history_txt a.active{color:#ff0000;}
+
+
+/*------------------styles for instagram page ------------------ */
+.container .instagram {float:left; padding-top:37px;}
+.container .instagram .mycorollastory_sec {float:left; padding-left:23px;}
+.container .instagram .mycorollastory_sec > img {float:left; margin-right:7px;}
+.container .instagram .mycorollastory_sec span {font-family:"helvetica_ce_35_thinregular"; font-size:13px; font-weight:bold; float:left; padding-top:8px;}
+.container .instagram .mycorollastory_sec span a { text-decoration:none; color:#000;}
+.container .instagram .mycorollastory_sec p {padding:8px 0 0 30px; display:inline-block;}
+.container .instagram .pagination {float:right; padding:8px 0 0 145px;}
+.container .instagram .pagination span {padding:5px 6px 0 0; float:left; font-size:12px;}
+.container .instagram .how_to_join_sec { float:left; padding:36px 0 0 143px;}
+.container .instagram .how_to_join_sec h2 {font-family:"fineliner_scriptregular"; font-size:30px; font-weight:normal; float:left;}
+.container .instagram .how_to_join_sec .capture_midicon {float:left; padding-left:52px;}
+.container .instagram .how_to_join_sec .capture_midicon > img {float:left; margin-right:16px;}
+.container .instagram .how_to_join_sec .capture_midicon span {float:left; padding-top: 5px; font-size:12px;}
+.container .instagram .how_to_join_sec .upload_icon {float:left; padding-left:30px;}
+.container .instagram .how_to_join_sec .upload_icon > img {float:left; margin-right:13px;}
+.container .instagram .how_to_join_sec .upload_icon span { float:left; padding-top:5px; font-size:12px;}
+.container .instagram .car_block_sec {float:left; padding-top:38px;}
+.container .instagram .car_block_sec .car_block {background-color:#fff; 
+box-shadow:1px 2px 0px 0px rgba(145, 145, 145, 0.75);
+-webkit-box-shadow:1px 2px 0px 0px rgba(145, 145, 145, 0.75);
+-moz-box-shadow:1px 2px 0px 0px rgba(145, 145, 145, 0.75);
+padding:18px;
+margin:0 85px 39px 0;
+float:left;
+}
+.container .instagram .car_block_sec .car_block:nth-child(3n) {margin-right:0;}
+.container .instagram .car_block_sec .car_block > img  {margin-bottom:10px; height:225px; width:225px;}
+.container .instagram .car_block_sec .car_block p {font-size:12px; width:225px;}
+.container .instagram .car_block_sec .car_block p.like_sec {margin-top:13px; text-align:right;}
+.container .instagram .car_block_sec .car_block p > span {padding:0 10px 0 10px;}
+
+
+/* -----------------styles for info page ------------------ */
+.container .info {float:left; padding-top:32px;}
+.container .info .linkmenu {float:left; padding-left:78px;}
+.container .info .linkmenu .achievements {float:left; background:url(../images/acheivents-bg.png) no-repeat; width:169px; height:42px; font-family:"fineliner_scriptregular"; font-size:34px; font-weight:normal; color:#000; padding-right:166px;}
+.container .info .linkmenu .achievements a {font-family:"fineliner_scriptregular"; font-size:34px; font-weight:normal; text-decoration:none; color:#000; display:block; padding:3px 0 0 7px;}
+.container .info .linkmenu .achievements a:hover {text-decoration:none; color:#ff0000;}
+.container .info .linkmenu .achievements a.active{color:#ff0000;}
+
+.container .info .linkmenu .fast_facts {float:left; background:url(../images/fast-facts-bg.png) no-repeat; width:135px; height:42px; font-family:"fineliner_scriptregular"; font-size:34px; font-weight:normal; color:#000; padding-right:145px;}
+.container .info .linkmenu .fast_facts a {font-family:"fineliner_scriptregular"; font-size:34px; font-weight:normal; text-decoration:none; color:#000; display:block; padding:3px 0 0 7px;}
+.container .info .linkmenu .fast_facts a:hover {text-decoration:none; color:#ff0000;}
+.container .info .linkmenu .fast_facts a.active{color:#ff0000;}
+
+.container .info .linkmenu .generations {float:left; background:url(../images/generation-bg.png) no-repeat; width:145px; height:42px; font-family:"fineliner_scriptregular"; font-size:34px; font-weight:normal; color:#000;}
+.container .info .linkmenu .generations a {font-family:"fineliner_scriptregular"; font-size:34px; font-weight:normal; text-decoration:none; color:#000; display:block; padding:3px 0 0 7px;}
+.container .info .linkmenu .generations a:hover {text-decoration:none; color:#ff0000;}
+.container .info .linkmenu .generations a.active{color:#ff0000;}
+.container .info .link_container {float:left; padding:15px 0 0 2px;}
+
+/* ------------------ styles for Video page-------------- */
+
+.video_top_bg {left:0; top:0; position:absolute; background:url(../images/video-top-bg.png) no-repeat; width:100%; height:900px; /*background-attachment:fixed;*/ background-position:center;}
+.video_bg_section {float:left; padding-top:70px;}
+.video_bg_section .car_txt {transform:rotate(-7deg);
+-ms-transform:rotate(-7deg); /* IE 9 */
+-webkit-transform:rotate(-7deg); /* Opera, Chrome, and Safari */
+font-family:"fineliner_scriptregular"; 
+font-size:52px; 
+font-weight:normal;
+padding-left:310px;
+padding-top:100px;
+}
+
+
+.video_bg_section .full_stories {transform:rotate(-5deg);
+-ms-transform:rotate(-5deg); /* IE 9 */
+-webkit-transform:rotate(-5deg); /* Opera, Chrome, and Safari */
+font-family:"fineliner_scriptregular"; 
+font-size:42px; 
+font-weight:normal;
+padding-left:430px;
+margin-top:-35px;
+}
+.video_bg_section p {margin-top:0; margin-left:300px; font-size:12px; padding:0; width:370px; text-align:center;}
+.start_of_journy_txt {float:left; margin-top:10px; margin-left:320px;}
+.start_of_journy_txt a {background:url(../images/start-of-journy-bg.png) no-repeat; width:309px; height:51px; display:block; font-family:"fineliner_scriptregular"; font-size:25px; font-weight:normal; padding:10px 0 0 80px; text-decoration:none; color:#000;}
+.start_of_journy_txt a:hover {text-decoration:none; color:#000;}
+
+/* styles for side navigation */
+
+.navigation {position:fixed; top:79px; right:79px;}
+.navigation .start_icon {float:left; padding-left:5px;}
+.navigation .pick_story {position:absolute; right:40px; top:10px;}
+.navigation .side_menu {/*float:left;*/ padding-top:2px;}
+.navigation .side_menu ul {float:left; list-style-type:none; margin:0; padding:0;}
+.navigation .side_menu ul li {/*float:left;*/ padding-bottom:2px; position:relative; width:45px; height:46px;}
+.navigation .side_menu ul li a {display:block; text-decoration:none;}
+.navigation .side_menu ul li span {
+position:absolute; 
+font-family:"helvetica_ce_35_thinregular"; 
+font-size:12px; 
+font-weight:bold; 
+top:13px; 
+right:30px; 
+color:#00bff3;
+width:300px;
+text-align:right;
+/*text-shadow: 0 0 0.5em #fff, 0 0 0.5em #fff,
+        0 0 0.1em #005b7f*/		
+text-shadow: #ffffff 1px 1px, #ffffff 2px 2px, #ffffff 3px 3px, #ffffff 2px 2px, #ffffff 2px 2px, #ffffff 2px 2px, #ffffff 2px 2px, #ffffff 2px 2px, #ffffff 2px 2px, #ffffff 2px 2px, #ffffff 2px 2px;
+color:#005b7f;				
+}
+.navigation .side_menu ul li a.active {background:url(../images/car-icon.png) no-repeat 51px 5px; width:70px; position:absolute;}
+/*.active {background:url(../images/car-icon.png) no-repeat 0 0; width:70px; position:absolute;}*/
+.video_container {width:100%; background:#00bff3 url(../images/video-profile-bg.png) repeat; /*height:1600px;*/ height:100%; margin-top:-150px; overflow: hidden;}
+.video_container .video_container_in { margin:0 auto; width:960px; padding-top:40px;}
+.video_container .video_container_in .video_profile_block {float:left; position:relative; z-index:99999; width:960px;}
+.video_container .video_container_in .video_profile_block .imgblock {float:left; padding-right:20px;}
+.video_container .video_container_in .video_profile_block .imgblock > img {
+display:block;
+-webkit-box-shadow:5px 5px 5px 0px rgba(106, 106, 106, 0.75);
+-moz-box-shadow:5px 5px 5px 0px rgba(106, 106, 106, 0.75);
+box-shadow:5px 5px 5px 0px rgba(106, 106, 106, 0.75);
+width:563px; 
+height:315px;
+border:1px solid #bfd0d5;
+}
+.video_container .video_container_in .video_profile_block .imgblock .heading_sec {margin:15px 0 0 19px; background:url(../images/video-bg-header.png) no-repeat; padding:5px 34px 0 45px; width:375px; height:53px;}
+.video_container .video_container_in .video_profile_block .imgblock .heading_sec h2 {float:left; margin-top:7px; padding:0; font-family:"fineliner_scriptregular"; font-size:35px; font-weight:normal;}
+.video_container .video_container_in .video_profile_block .imgblock .heading_sec .age {float:right; font-family:"fineliner_scriptregular"; font-size:35px; font-weight:normal}
+.video_container .video_container_in .video_profile_block .imgblock .heading_sec .age span {float: left; padding-top: 10px;}
+.video_container .video_container_in .video_profile_block .imgblock .heading_sec .age > img {margin:5px 0 0 10px;}
+.video_container .video_container_in .video_profile_block .txt_sec {float:left; padding-top:20px;}
+.video_container .video_container_in .video_profile_block .txt_sec .txt {float:left; font-size:18px;}
+.video_container .video_container_in .video_profile_block .txt_sec p {clear:both; float:left; margin-top:25px; width:215px; font-size:18px;}
+.my_corolla_car {position:relative; top:475px; right:95px;}
+.my_corolla_icon {position:relative; top:580px; right:405px;}
+.my_corolla_txt {position:relative; top:615px; right:160px; font-size:14px;}
+
+/*------------------styles for footer---------------------*/
+
+.footer {position:relative; margin-top:-250px; /*negative value of footer height*/ 	height:251px; clear:both; background:url(../images/footer-bg.png) no-repeat; width:100%; background-position:center; background-size:cover;} 
+.footer .footer_container { width:960px; margin:0 auto;}
+.footer .footer_container .footer_in {position:absolute; bottom:2px;}
+.footer .footer_container .footer_in_txt {float:left; padding-left:240px; font:normal 10px Arial; color:#000;}
+.footer .footer_container .social_media_block {float:left; padding-left:73px;}
+.footer .footer_container .social_media_icon { float:left; padding-left:25px;}
+.footer .footer_container .social_media_icon .fb_icon {float:left; padding-right:12px;}
+.footer .footer_container .social_media_icon .twitter_icon {float:left; padding-right:7px; padding-top:2px;}
+.footer .footer_container .social_media_icon .video_icon {float:left; padding-right:6px;}
+.footer .footer_container .social_media_icon .capture_icon {float:left; padding-right:9px;}
+.footer .footer_container .social_media_icon .ping_icon {float:left; padding-right:9px;}
+.footer .footer_container .social_media_icon .google_icon {float:left; padding-right:12px;}
+
+
+
+
+
+
