@@ -1,0 +1,56 @@
+<?php 
+function hartic_custom_form_alter(&$form, &$form_state, $form_id){
+	if ($form_id =='views_exposed_form'){
+		$form['title']['#attributes']['placeholder'] = t('Search by product name');
+		$form['field_product_type_tid']['#prefix'] ='<div class="selectarea">';
+		$form['field_product_type_tid']['#suffix'] ='</div>';
+		$form['field_vote_cycle_tid']['#prefix'] ='<div class="selectarea">';
+		$form['field_vote_cycle_tid']['#suffix'] ='</div>';
+		$form['field_product_type_tid']['#options']['All'] = 'Product Type';
+		$form['field_vote_cycle_tid']['#options']['All'] = 'Voting Type';
+		$form['field_product_type_tid']['#default_value'] = $form['field_product_type_tid']['#options']['All'];
+		
+	}
+	if($form_id=='comment_node_blog_form'){
+		
+  		if (isset($form['author']['_author'])) {
+   			 $form['author']['_author']['#title'] = t('Name:'); 
+			 $form['author']['_author']['#required'] = TRUE;	
+			 $form['author']['name']['#prefix'] = '<div class="comment_wrap">';
+			 $form['author']['name']['#suffix'] = '';
+			 $form['field_comment_email']['und'][0]['email']['#prefix'] = '' ;
+			 $form['field_comment_email']['und'][0]['email']['#suffix'] = '</div>' ;
+   			 $form['author']['mail']['#title'] = t('new'); 	
+		 	 $form['actions']['submit']['#value'] = t('Submit');
+ 		 }
+		else{
+			//echo "<pre>";
+			//print_r($form);
+			 $form['author']['is_anonymous']['#name'] = t('Name:'); 
+			 $form['author']['name']['#title'] = t('Name:');
+			 $form['author']['name']['#prefix'] = '<div class="comment_wrap">';
+			 $form['author']['name']['#suffix'] = '';
+			 $form['author']['name']['#required'] = TRUE;
+			 $form['author']['name']['#size'] =30;
+			 $form['field_comment_email']['und'][0]['email']['#size'] =30;
+			 $form['field_comment_email']['und'][0]['email']['#prefix'] = '' ;
+			 $form['field_comment_email']['und'][0]['email']['#suffix'] = '</div>' ;
+			 $form['author']['_author']['#required'] = TRUE;	
+   			 $form['author']['mail']['#title'] = t('new'); 	
+		 	 $form['actions']['submit']['#value'] = t('Submit');
+			 $form['captcha']['#prefix']= '<div class = "captcha_class" >'; 
+			 $form['captcha']['#suffix'] = '<div class = "note"> * Denotes a required field <p>Optional additional copy or instructional text can be added to this space if deemed necessary.</p></div>';
+			 $form['actions']['submit']['#prefix'] = '';
+			 $form['actions']['submit']['#suffix'] = '</div>';
+
+
+
+		}
+
+	}
+	
+}
+
+
+?>
+
