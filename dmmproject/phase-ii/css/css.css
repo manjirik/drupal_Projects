@@ -1,0 +1,137 @@
+body
+ {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;	
+	font-family:verdana;
+	font-size:12px;
+	background-color:#000000;
+}
+table
+{
+	font-family:verdana;
+	font-size:12px;
+}
+.formClass
+{
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;	
+}
+.h1
+{
+	height:10px;
+}
+.mainTable
+{
+	background-color:#F0EDEE;
+	padding:10px;
+	height:485;
+	#border:1px solid red;
+}
+.iconTable1
+{
+	background-color:#DBD7D8;	
+	padding:10px;
+}
+.iconTable2
+{
+	background-color:#ADAAAB;	
+	padding:10px;
+}
+.commentsTable
+{
+	background-color:#DBD7D8;
+	padding:4px;
+	font-size:10px;
+}
+.commentText
+{	
+	font-size:10px;
+}
+.commentBox
+{
+	background-color:#C2C0C1;	
+	padding:4px;
+}
+.musicIconTable
+{
+	background-color:#D9D7D7;		
+}
+.musicIcon
+{
+	background-color:#D9D7D7;	
+	width:48px;
+	padding-right:5px;
+	padding-left:5px;
+}
+.musicIconTxt
+{
+	background-color:#D9D7D7;	
+	padding-bottom:5px;
+}
+.w15
+{
+	width:15px;
+}
+.w3
+{
+	width:3px;
+}
+a 
+{
+  text-decoration:none;
+  color: #000000;
+}
+a:link 
+{ 
+	color: #000000;
+}
+a:visited 
+{
+	color: #000000;
+}
+a:hover 
+{
+	color: #000000;
+}
+a:active 
+{ 
+	color: #000000;  
+}
+.hidden
+{
+	display:none;
+}
+.songdetails
+{
+	background-color:#ffffff;
+	padding:2px;
+	display:none;
+	width:300px;
+	position:relative;
+	opacity:0.8;	
+	border: 2px solid #8C8B8B;
+}
+.footerText
+{
+	color:#ADAAAB;
+	font-size:9px;
+}
+.textBox
+{
+	font-size:11px;
+	padding:1px;
+}
+.scrollableDiv
+{
+	height:136px;	
+	overflow:auto;		
+}
+.playerContainer
+{
+	height:203px;
+	#border:1px solid red;
+}

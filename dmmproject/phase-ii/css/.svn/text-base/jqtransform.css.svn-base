@@ -1,0 +1,114 @@
+
+/* -------------
+ * Inputs
+ * ------------- */
+a, a:focus {
+    noFocusLine: expression(this.onFocus=this.blur()) !important;
+}
+*{ outline:none !important; }
+#Song_Settings .jqTransformInputWrapper {
+	height: 31px;
+	padding: 0px;
+	float:left;
+	width:176px !important;
+	margin:0 18px 0 0;
+}
+
+#Song_Settings .jqTransformInputInner {
+	padding: 0px;
+	margin: 0px;
+}
+
+#Song_Settings .jqTransformInputInner div {
+	height: 31px;
+	margin:0px 0px 0px 8px;
+}
+
+#Song_Settings .jqTransformInputInner div input {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	line-height: 18px;
+	vertical-align: middle;
+	height: 25px;
+	font-weight: bold;
+	color: #007BCC;
+	border: none;
+	width: 165px !important;
+	border-bottom:1px solid #979797;
+	background:transparent;
+}
+
+#Song_Settings .jqTransformInputWrapper_focus div div input,
+#Song_Settings .jqTransformInputInner div input:hover {
+	border-bottom-color: #8fC3e6;
+}
+
+/* -------------
+ * Checkboxes
+ * ------------- */
+#Song_Settings span.jqTransformCheckboxWrapper{
+	display:block;
+	float:left;
+	margin-top:5px;
+	width:55px;
+	position:relative;
+}
+/*
+#Song_Settings a.jqTransformCheckbox{
+	background:url("../images/song-radio.png") no-repeat scroll 0px -27px transparent !important;
+     display: block;
+    height: 30px;
+    margin: -7px 23px;
+    outline: medium none !important;
+    vertical-align: middle;
+    width: 34px;
+}
+#Song_Settings a.jqTransformChecked {
+    background:url("../images/song-radio.png") no-repeat scroll 0px 3px transparent !important;
+	display: block;
+    height: 30px;
+    outline: medium none !important;
+    width: 30px;
+}
+#Song_Settings a.jqTransformActive{
+    background: url("../images/song-radio.png") no-repeat scroll 0px -58px transparent !important;
+	display: block;
+    height: 30px;
+    outline: medium none !important;
+    width: 32px;
+}*/
+
+
+
+#Song_Settings a.jqTransformCheckbox{
+	background:url("../images/song-radio.png") no-repeat scroll -2px -30px transparent !important;
+	display: block;
+    height: 30px;
+    margin: -7px 23px;
+    outline: medium none !important;
+    vertical-align: middle;
+    width: 34px;
+	overflow:hidden; 
+}
+#Song_Settings a.jqTransformChecked {
+    background:url("../images/song-radio.png") no-repeat scroll -2px -92px transparent !important;
+	display: block;
+    height: 30px;
+    outline: medium none !important;
+    width: 30px;
+}
+#Song_Settings a.jqTransformActive{
+    background: url("../images/song-radio.png") no-repeat scroll -2px -61px transparent !important;
+	display: block;
+    height: 30px;
+    outline: medium none !important;
+    width: 32px;
+}
+#Song_Settings a.jqTransformActive.jqTransformChecked {
+    background: url("../images/song-radio.png") no-repeat scroll -2px 0px transparent !important;
+	display: block;
+    height: 30px;
+    outline: medium none !important;
+    width: 32px;
+}
+

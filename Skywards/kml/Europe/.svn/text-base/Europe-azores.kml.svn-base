@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document><name>KML file with polygon for bird species range</name>
+<description>Source various books and websites</description>
+<Style id="rangecolour">
+<LineStyle><color>660000FF</color><width>0.1</width></LineStyle>
+<PolyStyle>
+<color>660000FF</color>
+</PolyStyle>
+</Style>
+<Style id="linecolour">
+<LineStyle><color>660000FF</color><width>3</width></LineStyle>
+</Style>
+<Placemark><name>distribution/range</name>
+<description></description>
+<styleUrl>#linecolour</styleUrl>
+<LineString>
+<tessellate>1</tessellate><altitudeMode>clampToGround</altitudeMode>
+<coordinates>
+-24.906006,36.712467,0 
+-24.906006,37.918201,0 
+-28.048096,39.3173,0 
+-29.069824,38.556757,0 
+-24.906006,36.712467,0 
+</coordinates>
+</LineString>
+</Placemark>
+</Document>
+</kml>

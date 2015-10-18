@@ -1,0 +1,7 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteRule ^(admin|dmmapp|zones|tutorial|dmmfolio|dmmqna|dmmapp|sphere)($|/) - [L]
+RewriteRule ^([A-Za-z0-9_-]+)/?$ index.php?musician=$1 [L]
+RewriteRule ^([A-Za-z0-9_-]+)/([A-Za-z0-9-]+)$ index.php?musician=$1&songidm=$2 [L]
+RewriteRule ^([A-Za-z0-9_-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)$ index.php?alias=$1&lifestyle=$2&styleid=$3 [L]

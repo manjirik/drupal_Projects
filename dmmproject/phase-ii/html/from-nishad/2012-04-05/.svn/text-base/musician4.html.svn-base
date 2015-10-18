@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="musician1">
+  <div class="content">
+  <form>
+    <div class="heading">Zone<strong>Registration</strong></div>
+    <div class="col5">
+      <div class="fleft">
+        <label>About you</label>
+         <div><textarea name="" cols="" rows="" class="textarea"></textarea></div>
+      </div>
+     
+     
+      
+    </div>
+    <div class="col6">
+      <div class="fleft">
+    <select><option>Country</option></select>
+      </div>
+     <div class="box">Are You human?
+     <input type="text" value="" />
+     </div>    
+
+    </div>
+    <div class="clear content_bottom">
+        <div class="left"> <img src="images/video_icon.png" width="11" height="6" /> &nbsp;Musicians and companies can use the same registration
+to get started.</div>
+         <div class="right">
+         <ul>
+          <li>
+            <a href="#"> Back</a>
+          </li>
+          <li><a href="#">Next</a></li>
+         </ul>
+         
+         </div>
+    </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,212 @@
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+/*"Song_Settings" was the id body in previous code,here i make it a div id*/
+
+#Song_Settings .scroll-pane { width: auto; overflow-x: hidden; overflow-y:scroll; padding:0px 20px 0; height: 270px; visibility:visible; margin: 0 auto;position:relative; }
+
+#reviewMainWrapper .scroll-pane, #ad-guide-wrapper .ad-guide .scroll-pane{
+	width: 657px;
+	overflow: auto;
+	padding-right: 10px;
+	height: 250px;
+	visibility: visible;
+}
+
+#ad-guide-wrapper .ad-guide .scroll-pane { width: 575px; margin: 0; height: 200px; }
+#ad-guide-wrapper .ad-guide .scroll-pane .container { margin-left: 68px; }
+#ad-guide-wrapper .ad-guide .scroll-pane .ad-scroll-para-wrap
+{
+	width:450px;
+	height:109px;
+/*	margin:0 auto;*/
+	color:#7f7f7f;
+	padding-top:28px;
+}
+
+#ad-guide-wrapper .ad-guide .scroll-pane p{
+	color:#7f7f7f;
+	font-size:13px;
+	font-weight:500;
+	}
+
+#ad-guide-wrapper .ad-guide .scroll-pane span
+{
+	 background: url("../images/ad-do-ryt.png") no-repeat scroll right center transparent;
+    color: #575757;
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    height: 31px;
+    line-height: 31px;
+/*    margin-left: 78px;*/
+    margin-top: 23px;
+    width: 142px;
+}
+
+#ad-guide-wrapper .ad-guide .scroll-pane .span-wrong
+{
+	background:url(../images/ad-do-wrng.png) no-repeat scroll right center;
+	width:146px;
+	margin-top:15px;
+}
+
+#ad-guide-wrapper .ad-guide .scroll-pane .do_it_right_div,#ad-guide-wrapper .ad-guide .scroll-pane .do_it_wrong_div
+{
+	width:390px;
+	height:259px;
+	overflow:hidden;
+	margin:20px 0 0 17px;
+	background:url(../images/do_it_right_border.png)no-repeat center bottom;
+}
+
+#ad-guide-wrapper .ad-guide .scroll-pane .noborder
+{
+	background:none;
+	margin-top:-6px;
+}
+
+#ad-guide-wrapper .ad-guide .scroll-pane .do_it_right_div .right_image_container,#ad-guide-wrapper .ad-guide .scroll-pane .do_it_wrong_div .wrong_image_container {
+    color: #7f7f7f;
+    float: left;
+    height: 30px;
+    margin: 18px 0 0 0;
+    padding: 171px 0 0 0;
+    width: 160px;
+	text-align:center;
+}
+#ad-guide-wrapper .ad-guide .scroll-pane .do_it_right_div .img1,#ad-guide-wrapper .ad-guide .scroll-pane .do_it_wrong_div .img1
+{
+	background:url(../images/ad-images-sprite.png)no-repeat;
+}
+
+#ad-guide-wrapper .ad-guide .scroll-pane .do_it_wrong_div .img1
+{
+	background:url("../images/ad-images-sprite.png") no-repeat scroll 0 -215px transparent;
+}
+
+#ad-guide-wrapper .ad-guide .scroll-pane .do_it_right_div .img2,#ad-guide-wrapper .ad-guide .scroll-pane .do_it_wrong_div .img2
+{
+	background:url("../images/ad-images-sprite.png") no-repeat scroll -182px 0 transparent;
+	margin-left: 70px;
+}
+
+#ad-guide-wrapper .ad-guide .scroll-pane .do_it_wrong_div .img2 {
+    background: url("../images/ad-images-sprite.png") no-repeat scroll -185px -214px transparent;
+}
+
+#ad-guide-wrapper .ad-guide .scroll-pane .do_it_right_div p
+{
+	font-size:11px;
+	color:#7f7f7f;
+	text-align:center;
+	
+}
+
+#ad-guide-wrapper .jspContainer
+{
+ width:585px !important;	
+}
+
+#Song_Settings .jspContainer, #reviewMainWrapper .jspContainer, #popUpWrapper .jspContainer, #ad-guide-wrapper .jspContainer {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	background: none;
+	border: none;
+	bottom: 0;
+	box-shadow: none;
+	overflow: hidden;
+	right: 0;
+	visibility: visible;
+	position: relative;
+}
+#Song_Settings .jspPane, #reviewMainWrapper .jspPane, #popUpWrapper .jspPane, #popPanel .jspPane, #ad-guide-wrapper .jspPane {
+	position: absolute;
+	margin: 0 !important;
+	z-index: 0;
+}
+#songpanel .credits-popup .jspPane, #reviewPanel .credits-popup .jspPane, #popPanel .credits-popup{
+	position: static;
+	margin: 0 !important;
+	z-index: 100;
+}
+#Song_Settings .jspVerticalBar, #reviewMainWrapper .jspVerticalBar, #popUpWrapper .jspVerticalBar, #ad-guide-wrapper .jspVerticalBar {
+	top: 0;
+	right: 0;
+	width: 16px;
+	height: 100%;
+}
+#Song_Settings .jspHorizontalBar *, #reviewMainWrapper .jspHorizontalBar *, #popUpWrapper .jspHorizontalBar *,#ad-guide-wrapper .jspHorizontalBar * {
+	margin: 0;
+	padding: 0;
+}
+
+#Song_Settings .jspCap, #reviewMainWrapper .jspCap, #popUpWrapper .jspCap,#ad-guide-wrapper .jspCap {
+	display: none;
+	float: left;
+}
+#Song_Settings .jspTrack, #reviewMainWrapper .jspTrack, #popUpWrapper .jspTrack,#ad-guide-wrapper .jspTrack {
+	position: relative;
+	position: absolute;
+	cursor: pointer;
+	right: 0;
+	top: 0;
+	height: 100%;
+	padding: 3px;
+	width: 21px;
+}
+#ad-guide-wrapper .jspTrack
+{
+	right:11px !important;
+}
+
+#popUpWrapper .jspTrack
+{
+	right:16px;
+}
+
+#reviewMainWrapper .jspTrack
+{
+	padding:0;
+	
+}
+
+#reviewMainWrapper .jspTrack, #popUpWrapper .jspTrack{width: 8px !important;}
+#songpanel .jspDrag, #songpanel .jspDrag:hover, #reviewPanel .jspDrag, #reviewPanel .jspDrag:hover, #popPanel .jspDrag, #popPanel .jspDrag:hover,#ad-guide-wrapper .jspDrag,#ad-guide-wrapper .jspDrag:hover {
+	background: url("../images/scroll.png") no-repeat scroll center center transparent;
+	cursor: pointer;
+	float: right;
+	overflow: hidden;
+	position: absolute;
+	width: 11px;
+}
+#songpanel .jspArrow, #reviewPanel .jspArrow, #popPanel .jspArrow,#ad-guide-wrapper .jspArrow {
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+#songpanel .jspArrow.jspDisabled, #reviewPanel .jspArrow.jspDisabled, #popPanel .jspArrow.jspDisabled,#ad-guide-wrapper  .jspArrow.jspDisabled {
+	cursor: default;
+	background: #80808d;
+}
+#songpanel .jspVerticalBar .jspArrow, #reviewPanel .jspVerticalBar .jspArrow, #popPanel .jspVerticalBar .jspArrow,#ad-guide-wrapper .jspVerticalBar .jspArrow {
+	height: 16px;
+}
+#songpanel .jspVerticalBar .jspArrow:focus, #reviewPanel .jspVerticalBar .jspArrow:focus, #popPanel .jspVerticalBar .jspArrow:focus,#ad-guide-wrapper .jspVerticalBar .jspArrow:focus {
+	outline: none;
+}
+#songpanel .jspCorner, #reviewPanel .jspCorner, #ad-guide-wrapper .jspCorner {
+	background: #eeeef4;
+	float: left;
+	/*height: 100%;*/
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+	margin: 0 -3px 0 0;
+}

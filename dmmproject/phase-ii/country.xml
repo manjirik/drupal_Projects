@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<HIPPOP>
+	<SONG1>
+		<SONGID>1</SONGID>
+		<TITLE>Aaja Maahi (Remix)</TITLE>
+		<ARTIST>Party Sizzlers</ARTIST>
+		<PATH>songs/party_sizzlers/Aaja Maahi (Remix).mp3</PATH>		
+		<POSTER>albumArt/song1.jpg</POSTER>
+	</SONG1>
+	<SONG2>
+		<SONGID>2</SONGID>
+		<TITLE>Char Baj Gaye (Remix)</TITLE>
+		<ARTIST>Party Sizzlers</ARTIST>
+		<PATH>songs/party_sizzlers/Char Baj Gaye (Remix).mp3</PATH>		
+		<POSTER>albumArt/song2.jpg</POSTER>
+	</SONG2>
+	<SONG3>
+		<SONGID>3</SONGID>
+		<TITLE>Fire - Raghav</TITLE>
+		<ARTIST>Party Sizzlers</ARTIST>
+		<PATH>songs/party_sizzlers/Fire - Raghav.mp3</PATH>		
+		<POSTER>albumArt/song3.jpg</POSTER>
+	</SONG3>
+	<SONG4>
+		<SONGID>4</SONGID>
+		<TITLE>Fully Faltu (Remix)</TITLE>
+		<ARTIST>Party Sizzlers</ARTIST>
+		<PATH>songs/party_sizzlers/Fully Faltu (Remix).mp3</PATH>		
+		<POSTER>albumArt/song4.jpg</POSTER>
+	</SONG4>
+	<SONG5>
+		<SONGID>5</SONGID>
+		<TITLE>Gur Nal Ishq Mitha (Remix)</TITLE>
+		<ARTIST>Party Sizzlers</ARTIST>
+		<PATH>songs/party_sizzlers/Gur Nal Ishq Mitha (Remix).mp3</PATH>		
+		<POSTER>albumArt/song5.jpg</POSTER>
+	</SONG5>	
+</HIPPOP>

@@ -1,0 +1,16 @@
+.homeContent{ width:501px; margin:0 auto; padding:126px 0 0; pos ition:absolute; top:28.2%; left:32.65%;}
+.songCount{ width:117px; height:35px; line-height:35px; padding:0 10px; margin:0 auto; font-size:21px; font-weight:bold; background:url(../images/song_count_bg.png) no-repeat scroll left top;}
+.commentBox{ width:501px; margin:0 auto; padding:85px 0 0;}
+.formTxtArea{ width:461px; height:49px; padding:20px; font-size:21px; color:#FFF; overflow:auto; border:none; background:none; background:url(../images/textarea_bg.png) no-repeat scroll left top;}
+.charCount{ font-size:12px; font-weight:bold; color:#484a4b; margin:-4px 0 0 6px;}
+
+.btmWrapper{ min-width:960px; width:100%; height:65px; position:absolute; bottom:55px; padding:15px 0 0; background:#000;}
+
+#footer{ min-width:960px; width:100%; height:55px; position:absolute; bottom:0; *bottom:-3px; background:url(../images/footer_bg_big.gif) repeat-x scroll left top #c3c3c3;}
+.footerSec .songPlate{ float:right; margin:7px 0 0;}
+.footerSec .playControls{ float:right; margin:1px 0 0 15px;}
+ul.lftMenu{ position:absolute; left:0; bottom:1px; z-index:100;}
+
+.footerSec .searchBox{ float:right; margin:0 0 0 18px;}
+.footerSec .searchBox .searchInput{ width:202px; height:17px; padding:10px 30px 7px 12px; margin:1px 0 0; border:none; background:none; background:url(../images/search_sprite.png) no-repeat scroll left top;}
+.songPlate{ width:208px; margin:0 auto; padding:7px 0 0;}

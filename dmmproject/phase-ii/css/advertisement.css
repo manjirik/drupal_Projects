@@ -1,0 +1,275 @@
+@charset "utf-8";
+/* CSS Document */
+img{
+	border:none;
+}
+
+.errorTextAdv{
+	padding-top: 218px;
+	padding-left: 80px;
+	position: relative;
+}
+
+.ad-guide-header img { margin-right:6px; }
+/*#dialogShowAdGuide { width: 691px; height: 468px; }*/
+#ad-guide-wrapper
+{
+	width:691px;
+	height:468px;
+	margin:0 auto ;
+	position:relative;
+	overflow:hidden;
+}
+
+/*Advertisement guide right button*/
+#ad-guide-wrapper #adGuide {
+  background: url("../images/song-guide.png") no-repeat scroll 5px 12px transparent;
+    cursor: pointer;
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px 0 5px 11px;
+    position: absolute;
+    right: 54px;
+    top: 45px;
+    transition: background 0.25s ease-in-out 0s;
+    width: 110px;
+}
+
+#ad-guide-wrapper #adGuide a
+{
+	margin: 0 0 0 7px;
+}
+
+#ad-guide-wrapper #adGuide:hover {
+    background: url("../images/song-guide.png") no-repeat scroll 5px 12px #EAEAEA;
+    border-radius: 1px 1px 1px 1px;
+}
+/*Advertisement guide right button*/
+
+#ad-guide-wrapper .ad-guide-content
+{
+	color: #F5F5F6;
+    height: 295px;
+    margin: 108px auto 0;
+    overflow: visible;
+    position: relative;
+    width: 608px;	
+	background-color:#f7f8f8;
+}
+
+#ad-cancel-save
+{
+	float: right;
+    margin: 15px 22px 0 0;
+}
+
+#ad-cancel-save #adCancel
+{
+	color: #077AC7;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 18px;
+    font-weight: 200;
+    height: 35px;
+    letter-spacing: -0.5px;
+    line-height: 35px;
+    margin-right: 5px;
+    text-align: center;
+    width: 125px;
+}
+
+#ad-cancel-save #adSave
+{
+	
+	background: url("../images/btnbg.png") no-repeat scroll left top transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 18px;
+    font-weight: 200;
+    height: 35px;
+    letter-spacing: -0.5px;
+    line-height: 35px;
+    text-align: center;
+    width: 125px;
+}
+
+#ad-cancel-save #adSave:active
+{
+ background: url("../images/btnbg.png") no-repeat scroll 0 -36px transparent;
+}
+
+#ad-guide-wrapper .ad-guide-content .common
+{
+	width:304px;
+	height:295px;
+	/*float:left;
+	position:relative;*/
+	position:absolute;
+}
+
+
+#ad-guide-wrapper .ad-guide-content .ad-guide-left {
+	left:0px;
+}
+#ad-guide-wrapper .ad-guide-content .ad-guide-right {
+	left: 305px;
+}
+
+#ad-guide-wrapper .ad-guide-content .common .ad-links
+{
+	-moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 transparent;
+    border-color: -moz-use-text-color -moz-use-text-color #8e8e8e;
+    border-image: none;
+    border-style: none none solid;
+    border-width: medium medium 1px;
+    bottom: 55px;
+    color: #c5c4c4;
+    float: left;
+    font-size: 16px;
+    font-weight: 700;
+    left: 30px;
+    position: absolute;
+    width: 243px !important;	
+}
+
+#ad-guide-wrapper .ad-guide-content .common .ad-clear
+{
+	position:absolute;
+	color:#0876c0;
+	bottom:8px;
+	left:9px;
+}	
+
+#ad-guide-wrapper .ad-guide-content .common .ad-link-info
+{
+	bottom: 28px;
+    color: #BFC6C9;
+    font-size: 10px;
+    height: 25px;
+    left: 31px;
+    position: absolute;
+    width: 243px;
+}
+
+#ad-guide-wrapper .ad-guide-content .common .choose-ad-image
+{
+ 	 background: url("../images/upload-button-sprite.png") no-repeat scroll 0 0 transparent;
+    color: #077AC7;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    height: 35px;
+    left: 73px;
+    line-height: 35px;
+    position: absolute;
+    text-align: center;
+    top: 155px;
+    width: 160px;
+}
+
+#ad-guide-wrapper .ad-guide-content .common .choose-ad-image:active
+{
+	 background: url("../images/upload-button-sprite.png") no-repeat scroll 0 -54px transparent;
+}
+
+#ad-guide-wrapper .ad-guide-content .common .ad-preview
+{
+	width:161px;
+	height:160px;
+	position: absolute;
+	left:73px;
+	overflow:hidden;
+	background-color:#dadada;
+	top:-11px;
+	border:none;
+}
+
+#ad-guide-wrapper .ad-guide-content .common .ad-preview h2
+{
+	position:absolute;
+	width:120px;
+	left:50%;
+	margin-left:-60px;
+	height:36px;
+	top:50%;
+	margin-top:-18px;
+	text-align:center;
+	font-size:17px;
+	color:#ffffff;
+}
+
+#ad-guide-wrapper .ad-guide-content .common .ad-preview h2 p
+{
+	color:#9c9c9c;
+	font-size:10px;
+	margin-top:17px;
+}
+
+
+#ad-guide-wrapper .ad-guide-content #ad-separator
+{
+	background: url("../images/ad-separator.png") no-repeat scroll 0 0 transparent;
+    height: 329px;
+    left: 50%;
+    position: absolute;
+    top: -45px;
+    width: 2px;
+}
+
+#ad-guide-wrapper .ad-guide-content #ad-switch-anchor
+{
+	background:url(../images/ad-switch-anchor.png) no-repeat;
+	width:17px;
+	height:18px;
+	cursor:pointer;
+	display:block;
+	text-indent:9999px;
+	overflow:hidden;
+	position:absolute;
+	top:80px;
+	left:294px;
+	z-index:1;
+}
+
+
+#ad-footer-wrapper
+{
+	width:691px;
+	height:100%;
+	margin:0 auto;
+	background:url(../images/img-bgshadow.png) center top no-repeat;
+	
+}
+
+#ad-footer-wrapper #ad-help
+{
+	background:
+	font-size:10px;
+	color:#a89999;
+	width:319px;
+	height:30px;
+	display:block;
+	position:absolute;
+	left:120px;
+}
+
+#ad-footer-wrapper #ad-bottomSpan
+{
+	display: block;
+    font-family: arial;
+    font-size: 11px;
+    height: 300px;
+    margin: 0 auto;
+    padding-top: 25px;
+    width: 420px;
+	background:url(../images/cam.png)no-repeat 0 29px;
+}
+

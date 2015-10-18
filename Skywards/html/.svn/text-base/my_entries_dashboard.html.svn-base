@@ -1,0 +1,33 @@
+<style>
+*{ margin:0px; padding:0px;}
+.myEntryDashboard{width:810px;}
+.myEntryDashboard ul{float:left; list-style:none; width:186px; height:329px; background-color:#bcb7ac;}
+.myEntryDashboard ul li{ overflow:visible; position:relative; z-index:2;}
+.myEntryDashboard ul li a{height:31px; line-height:31px; border-bottom:1px solid #908980; font-family:'EK03Plain-B02'; font-size:14px; color:#776e68;display:block;padding:0px 0px 0px 15px; text-decoration:none;}
+.myEntryDashboard ul li.active{margin-right:-13px;}
+.myEntryDashboard ul li.active a{background:url(images/myEntryActive.png) no-repeat top right;color:#FFF;border-bottom:none;height:32px;}
+.myEntryCity{float:right; position:relative; z-index:1;}
+.myEntryCity .desc{position:absolute; width:370px; top:20px; right:50px;}
+.myEntryCity .desc h4{font-family:'EK03Serif-B01'; font-size:25px; color:#2f3436;}
+.myEntryCity .desc span{font-size:12px; color:#2f3436;}
+.myEntryCity .btn{position:absolute;bottom:23px; right:19px;}
+.myEntryCity .btn a{background:url(images/myEntryDBBtnBG.jpg) no-repeat top left;width:178px; height:33px; text-decoration:none; color:#FFF; display:block; line-height:33px; padding-left:28px; font-family:'EK03Plain-M02'; font-size:14px;}
+</style>
+<div class="myEntryDashboard">
+	<ul>
+    	<li><a href="#">My First Entry</a></li>
+        <li class="active"><a href="#">My Second Entry</a></li>
+        <li><a href="#">My Third Entry</a></li>
+        <li><a href="#">My Fourth Entry</a></li>
+        <li><a href="#">My Fifth Entry</a></li>
+    </ul>
+    <div class="myEntryCity">
+    	<div class="desc">
+            <h4>Say Hello to<br />
+            Jeddah, Saudi Arabia</h4>
+            <span>Jeddah is the principal gateway to Mecca, Islam's holiest city, which able-bodied Muslims are required to visit at least once in their lifetime. It is also a gateway to Medina, the second holiest place in Islam.</span>
+        </div>
+        <div class="btn"><a onclick="#" href="javascript:void(0)" id="">Create your second entry</a></div>
+    <img src="images/myEntry_city_jeddah.jpg" width="623" height="329" />
+    </div>
+</div>

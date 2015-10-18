@@ -1,0 +1,84 @@
+<?php $uid = md5(uniqid(rand())); ?>
+<html>
+<head>
+<title>Upload Progess Bar</title>
+<style type="text/css">
+#pb_outer {
+	height: 20px;
+	border: 1px inset #000000;
+	width: 80%;
+	margin: 20px auto;
+	display: none;
+}
+#pb_inner {
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #003399;
+	height: 20px;
+	width: 1px;
+	text-align: center;
+}
+</style>
+<script type="text/javascript">
+var HttpRequestObject = false;
+if(window.XMLHttpRequest) {
+   HttpRequestObject = new XMLHttpRequest();
+}
+else if(window.ActiveXObject) {
+   HttpRequestObject = new ActiveXObject("Microsoft.XMLHTTP");
+}
+function startProgress(uid) {
+  //document.getElementById('upload').style.display = 'none';
+   document.getElementById('pb_outer').style.display = 'block';
+   setTimeout('getProgress("' + uid + '")', 1000);
+}
+
+function sleep(milliSeconds){
+    var startTime = new Date().getTime(); // get the current time
+    while (new Date().getTime() < startTime + milliSeconds); // hog cpu
+	
+}
+function getProgress(uid) {
+
+	
+
+   if(HttpRequestObject) {
+      HttpRequestObject.open('GET', 'getprogress.php?uid=' + uid, true);
+      HttpRequestObject.onreadystatechange = function() {
+         if(HttpRequestObject.readyState == 4 && HttpRequestObject.status == 200) {
+            var progress = HttpRequestObject.responseText;
+            document.getElementById('pb_inner').style.width = progress + '%';
+            document.getElementById('pb_inner').innerHTML = progress + '%';
+            if(progress < 100) {
+               setTimeout('getProgress("' + uid + '")', 10000);
+            }
+            else {
+               document.getElementById('pb_inner').innerHTML = 'Upload Complete!';
+			  // document.getElementById('pb_inner').style.display = 'none';
+            }
+         }
+      }
+      HttpRequestObject.send(null);
+   }
+}
+</script>
+</head>
+<body>
+<form onSubmit="startProgress('<?php echo $uid; ?>');" action="upload.php" method="post" enctype="multipart/form-data" name="upload1" id="upload1" target="upload_frame">
+  <input type="hidden" name="APC_UPLOAD_PROGRESS" id="progress_key" value="<?php echo $uid; ?>" />
+  <input type="file" name="file" id="file" />
+  <input type="submit" name="submit" id="submit" value="Upload!" />
+</form>
+<?php $uid1 = md5(uniqid(rand())); ?>
+<form onSubmit="startProgress('<?php echo $uid; ?>');" action="upload.php" method="post" enctype="multipart/form-data" name="upload2" id="upload2" target="upload_frame">
+  <input type="hidden" name="APC_UPLOAD_PROGRESS" id="progress_key" value="<?php echo $uid1; ?>" />
+  <input type="file" name="file" id="file" />
+  <input type="submit" name="submit" id="submit" value="Upload!" />
+</form>
+
+<div id="pb_outer">
+  <div id="pb_inner"></div>
+</div>
+<iframe style="display: none" id="upload_frame" name="upload_frame"></iframe>
+</body>
+</html>

@@ -1,0 +1,75 @@
+*{ margin: 0; padding: 0; }
+body { background:#fff; color: #000; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 100%; width:100%; height:100%; position:relative; }
+html { width:100%; }
+.landing-promos { clear:both; }
+.landing-promos div { float:left; position:relative; }
+.landing-promos div span { position:absolute; right:10px; bottom:10px; color:#1f1f1f; }
+.landing-promos div.auto span { position:absolute; right:10px; bottom:10px; color:#fff; }
+.landing-promos div.kazakhstan span { position:absolute; right:10px; bottom:10px; color:#fff; }
+.personal-banking { width:341px; height:128px; cursor:pointer; }
+.wholesale-banking { width:220px; height:128px; cursor:pointer; }
+.treasury { width:188px; height:128px; cursor:pointer; }
+.investment-banking { width:496px; height:127px; cursor:pointer; }
+.takaful { width:253px; height:127px; cursor:pointer; }
+.auto { width:398px; height:127px; cursor:pointer; }
+.kazakhstan { width:351px; height:127px; cursor:pointer; }
+
+/*.inside-banner-container .tab-content { clear:both; display:block; color:#5c615d; overflow:hidden; position:relative; }
+.inside-banner-container .small { height:348px; }
+.inside-banner-container .big { height:382px; }*/
+
+.tab-content .left { margin-left:20px; float:left; color:#5c615d; font-size:.75em; line-height:18px; height:100%; width:510px; }
+.tab-content .right { float:right; display:block; margin:0; color:#5c615d; line-height:18px; font-size:.75em; width:207px; height:100%; }
+.tab-content .full { clear:both; color:#5c615d; font-size:.75em; line-height:18px; overflow:hidden; height:348px; }
+.tab-content .page-title { display:block; border-bottom:solid 2px #f99731; color:#f99731; font-size:1.25em; margin:10px 0; }
+.tab-content a { color:#d3710c; font-size:.875em; /*font-weight:bold;font-style:italic;*/	  }
+ul.generic { list-style:none; list-style-image:url(../../../../../img/li-bullet.png); width:220px; }
+ul.generic li { font-size:11px; padding: 6px 0; margin:0 0 0 20px; list-style:none; list-style-image:url(../../../../../img/li-bullet.png); clear:both; }
+.w232 li { font-size:11px; padding: 6px 0; margin:0 0 0 20px; list-style:none; list-style-image:url(../../../../../img/li-bullet.png); clear:both; border-bottom: 1px solid #CCCCCC }
+.back-link { font-size: 11px; float:left; padding: 9px 0 0 20px;}
+.back-link a { color: #D3710C; font-size: 11px; font-style: italic;}
+
+.full .finance-block { float:left; overflow:hidden; margin-right:1px; width:249px; height:100%; position:relative; }
+.full .last { margin-right:0; }
+.full .finance-block .fb-title { clear:both; display:block; margin:20px 0 10px 20px; color:#3a3c3a; font-size:1.25em; }
+.full .finance-block .fb-points { clear:both; display:block; margin:0 0 0 20px; color:#3a3c3a; font-size:1.25em; }
+.full .finance-block .fb-points ul li { font-size:.875em; }
+.full .finance-block .click-through { position:absolute; background: #ec8131 url(../img/click-through.jpg) right top no-repeat; bottom:30px; left:80px; padding:0 19px 0 5px; height:22px; }
+.full .finance-block .click-through ul { list-style-type:none; margin:0; padding:0 }
+.full .finance-block .click-through ul li { float:left; list-style-type:none; margin:0; padding:0 }
+.full .finance-block .click-through ul li a { color:#fff; font-style:normal; line-height:22px; }
+.full .last { margin-right:0; }
+
+.full .block-detail { clear:both; overflow:hidden; width:100%; height:100%; position:relative; }
+.full .block-detail .detail-img { float:left; overflow:hidden; width:213px; height:100%; }
+.full .block-detail .detail-copy { float:left; overflow:hidden; width:516px; height:100%; margin-left:10px; }
+.full .block-detail .detail-copy div { margin-right:10px; }
+
+h3 {font-size:23px;display:block;overflow:hidden;border-bottom:1px solid #f99731;color:#f99731;font-size:21px;font-weight:normal;padding-top:10px;line-height:22px;margin-bottom:15px;}
+.scrollCont{display:block;overflow-y:scroll;width:490px;height:296px;padding-right:10px;}
+.scrollCont .contxt{display:block;overflow:hidden;padding:0 0 10px 0;}
+.scrollCont .contxt span{display:block;overflow:hidden;font-size:11px;color:#d07211;font-weight:bold;padding-bottom:1px;}
+.scrollCont .contxt p{display:block;overflow:hidden;font-size:11px;}
+.scrollCont .contxt span strong{color:#5c615d;font-size:11px;}
+
+.lftCont{float:left;display:block;overflow:hidden;width:529px;padding:0 30px 0 0;}
+h5{font-size:13px;display:block;overflow:hidden;color:#5c615d;font-family:Arial;padding-bottom:10px;}
+p{font-size:11px;color:#5c615d;display:block;overflow:hidden;padding-bottom:15px;text-align:justify;}
+p a.download{background:#F99731;font-size:10px;padding:3px 5px;color:#fff;}
+
+.productServices{display:block; height:750px; height:383px;}
+.productServices .cont{width:250px; height:121px; padding:101px 0 0 500px;}
+.productServices .cont h2{font-size:26px; color:#5c615d; font-weight:normal;}
+.productServices .cont p{font-size:12px; color:#5c615d; padding:10px 0;}
+.btn-submit{float:left;
+	background:#F99731;
+	border:none;
+	margin:0px 0 10px 0px;
+	padding:2px 9px;
+	overflow:visible;
+	color:#f2f2f2;
+	font:bold 10px/15px Arial, Helvetica, sans-serif;
+	cursor:pointer;
+}
+
+.static-link {}

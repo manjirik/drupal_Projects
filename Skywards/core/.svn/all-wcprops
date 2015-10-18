@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/creatives/!svn/ver/14148/2013/Blue_Barracuda/Skywards/trunk/core
+END
+BaseModel.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/creatives/!svn/ver/13929/2013/Blue_Barracuda/Skywards/trunk/core/BaseModel.php
+END
+BaseController.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/creatives/!svn/ver/14148/2013/Blue_Barracuda/Skywards/trunk/core/BaseController.php
+END
+ez_sql_mysql.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/creatives/!svn/ver/10118/2013/Blue_Barracuda/Skywards/trunk/core/ez_sql_mysql.php
+END
+ez_sql_core.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/creatives/!svn/ver/10118/2013/Blue_Barracuda/Skywards/trunk/core/ez_sql_core.php
+END

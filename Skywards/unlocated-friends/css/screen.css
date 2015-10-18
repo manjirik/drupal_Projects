@@ -1,0 +1,351 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'ek03plain-b02b02';
+    src: url('../fonts/ek03plain-b02-webfont.eot');
+    src: url('../fonts/ek03plain-b02-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ek03plain-b02-webfont.woff') format('woff'),
+         url('../fonts/ek03plain-b02-webfont.ttf') format('truetype'),
+         url('../fonts/ek03plain-b02-webfont.svg#ek03plain-b02b02') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ek03plain-m02m02';
+    src: url('../fonts/ek03plain-m02-webfont.eot');
+    src: url('../fonts/ek03plain-m02-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ek03plain-m02-webfont.woff') format('woff'),
+         url('../fonts/ek03plain-m02-webfont.ttf') format('truetype'),
+         url('../fonts/ek03plain-m02-webfont.svg#ek03plain-m02m02') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ek03serif-b01b01';
+    src: url('../fonts/ek03serif-b01-webfont.eot');
+    src: url('../fonts/ek03serif-b01-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ek03serif-b01-webfont.woff') format('woff'),
+         url('../fonts/ek03serif-b01-webfont.ttf') format('truetype'),
+         url('../fonts/ek03serif-b01-webfont.svg#ek03serif-b01b01') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ek2003plain-l02l02';
+    src: url('../fonts/ek2003plain-l02-webfont.eot');
+    src: url('../fonts/ek2003plain-l02-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ek2003plain-l02-webfont.woff') format('woff'),
+         url('../fonts/ek2003plain-l02-webfont.ttf') format('truetype'),
+         url('../fonts/ek2003plain-l02-webfont.svg#ek2003plain-l02l02') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	}
+	
+.mainWrapper{width:810px; margin:0 auto; overflow:hidden; position:relative;}
+	
+.header{
+	background-color: #2f3436;
+	color: white;
+	font-size: 16px;
+	}
+	
+.heading{
+	float: left;
+	width: 50%;
+	padding: 8px;
+	}
+
+.chaticon{
+	background-color: #eeedec;
+	width: 44px;
+	height: 31px;
+	float: left;
+	text-align:center;
+	padding-top:10px;	
+	}
+
+.chaticon img{
+	vertical-align:middle;
+	}	
+	
+.welcome{
+	padding: 10px;
+	float:left;
+	}
+	
+.top{
+	background-color:#e4ded0;
+}
+
+.progressbar{padding: 20px;
+	float: left;
+	}
+
+.logo{
+	background-color: #d90e25;
+	float:right;
+	margin-right: 20px;
+	margin-top: -41px;
+	padding-top: 50px;
+	}
+
+.countdowntimer{
+	float: left;
+	padding-top: 15px;
+	width:236px;
+	overflow:hidden;
+	}	
+
+.countdowntimer-inner{
+	background-color: #353535;
+	padding: 5px;
+	width: auto;
+	width: 232px;
+}
+#counter{ width:350px; }
+	
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}	
+
+  br { clear: both; }
+      .cntSeparator {
+        font-size: 12px;
+        margin: 10px 7px;
+        color: #fff;
+      }
+      .desc { margin: 7px 3px; }
+      .desc div {
+        float: left;
+        font-family: Arial;
+        width: 75px;
+		text-align: center;
+        font-size: 13px;
+        font-weight: bold;
+        color: #fff;
+      }
+	  
+.ui-state-active{
+	background-color: #d61e2a;
+	}
+.footer{
+	color: #393333;
+	font-size: 11px;
+	background-color: #f1eee7;
+	padding: 10px;
+	}	
+.terms{
+	float: left;
+	line-height:24px;
+	}	
+.terms a{
+	color: #393333;
+	text-decoration:none;
+	}	
+.terms a:first-child{
+	margin-right: 30px;
+	}		
+.connect{
+	float: right;
+	line-height:24px;	
+	}		
+.copyright{
+	text-align: center;
+	color: #d5d2cc;
+	line-height:24px;
+	}		  
+
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute; left: -99999999px; }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.ui-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .ui-helper-clearfix { height:1%; }
+.ui-helper-clearfix { display:block; }
+/* end clearfix */
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+/* jQuery UI Tabs 1.8.6
+ *
+ * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Tabs#theming
+ */
+.ui-tabs { position: relative; padding:0; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav { margin: 0; padding: 0;}
+.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; margin: 0 .2em 0 0; border-bottom: 0 !important; padding: 0 0 0 0; white-space: nowrap; }
+.ui-tabs .ui-tabs-nav li a { float: left; padding: 7px 15px 7px 12px; text-decoration: none; color:#333; font-weight:bold; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 0 0; background: none; }
+.ui-tabs .ui-tabs-hide { display: none !important; }
+.ui-tabs .ui-tabs-nav li { /*background:url(../img/tab_sub.gif) no-repeat left -56px;*/ }
+.ui-tabs .ui-tabs-nav li a { color:#FFF; font-family:'EK03Serif-B01'; font-size:18px; font-weight:normal; padding-left:20px; padding-right:20px; /*background:url(../img/tab_sub.gif) #B9E6F4 repeat-x right -56px; */}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected, .ui-tabs .ui-tabs-nav li.ui-state-hover { background-position: left top; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-hover a { background-position: right top; }
+.tabs .spotlight { width:138px; }
+.tabs .spotlight a.apply-now-link { margin-left:auto; margin-right:auto; }
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a{background-color: #d61e2a}
+.ui-tabs .ui-tabs-nav li a{background-color: #2f3435}
+
+/*bottom content above footer*/
+.hide-btm-content-btn, .show-btm-content-btn{ background:#eeedec; border:1px solid #FFF; float:right; margin:-26px 20px 0 0; position:relative; z-index:10; border-bottom:none; }
+.hide-btm-content-btn a, .show-btm-content-btn a{ padding:5px 18px; color:#393333; text-decoration:none; display:block; text-transform:uppercase; font-size: 11px; font-weight:bold; font-family:Arial, Helvetica, sans-serif; }
+.show-btm-content-btn{display:none;}
+
+.btm-content-box{ background:#eeedec; padding:16px 20px; border-top:1px solid #FFF; border-bottom:1px solid #FFF; position:relative; z-index:1;}
+.btn-wrapper{ background:url(../images/btn-bg.png) repeat-x; border:1px solid #595350; height:38px; overflow:hidden;}
+.btn-wrapper a { font-family:'EK2003Plain-L02'; font-size:17px; font-weight:bold; background:url(../images/btn-text-bg.png) no-repeat 10px 50%; padding:9px 0 10px 32px; display:block; color:#FFF; font-size:16px; text-decoration:none;}
+#btn_select_destination{ float:left; width:270px; }
+
+.destination-thumb{ float:right; width:281px; margin-top:-40px;}
+
+.facebook_like_wrapper{ float:left; width:480px; clear:both; margin-top:30px; }
+
+
+.ltBox{width:100%; height:100%; position:absolute; top:0; left:0; background:#888; z-index:99;}
+.ltBoxPopup{width:640px; height:450px; background:#d50915; position:absolute; left:85px; top:280px; z-index:100; box-shadow: 0 0 5px #444; color:#fff;}
+.ltBoxPopup .topIcon{width:71px; height:71px; position:absolute; top:0; left:50px; }
+.ltBoxPopup .emiratesLogo{width:99px; height:131px; position:absolute; top:0; right:42px; }
+.ltBoxPopup .close{width:31px; height:31px; position:absolute; top:-15px; right:-15px; background:url(../images/close.png)0 0 no-repeat;cursor:pointer;}
+.ltBoxPopup .desc{display:block; padding:100px 50px 50px 50px;}
+.ltBoxPopup .desc h2{display:block; font-family:'ek03serif-b01b01'; font-size:60px; color:#fff;}
+.ltBoxPopup .desc p{font-size:14px;padding:15px 0; line-height:150%;}
+.ltBoxPopup .desc .actionButtonBox{display:block; width:100%; padding:10px 0; text-decoration:none; text-align:left; overflow:hidden}
+.ltBoxPopup .desc .actionButtonBox span.actionButton{display:block; width:270px; float:left; background:url(../images/selectdest-bg.jpg)0 0 repeat-x; cursor:pointer; border:1px solid #b5ada9; } 
+.ltBoxPopup .desc .actionButtonBox span.actionButton span{display:block; padding:10px 10px 11px 30px; text-align:left; color:#564534;font-family: 'ek03serif-b01b01'; font-size:17px; font-weight:normal; background:url(../images/dest-arrow.png)12px 14px no-repeat; letter-spacing:-1px;}
+.ltBoxPopup .desc .actionButtonBox p{float:left; font-weight:normal; padding:10px 0 10px 20px; font-size:14px; line-height:150%;}
+.ltBoxPopup .desc .actionButtonBox p a{text-decoration:underline; color:#fff;}
+
+.greyBox{background:#2e3436 !important;}
+.ltBoxPopup .videoPlayer{display:block;}
+.ltBoxPopup .actionButtonBox{display:block; padding:10px 10px; text-decoration:none; text-align:left; overflow:hidden}
+.ltBoxPopup .actionButtonBox span.actionButton{display:block; width:270px; float:left; background:url(../images/selectdest-bg.jpg)0 0 repeat-x; cursor:pointer; border:1px solid #b5ada9; } 
+.ltBoxPopup .actionButtonBox span.actionButton span{display:block; padding:10px 10px 11px 30px; text-align:left; color:#564534;font-family: 'ek03serif-b01b01'; font-size:17px; background:url(../images/dest-arrow.png)12px 14px no-repeat; letter-spacing:-1px;}
+.ltBoxPopup .actionButtonBox p{float:left; font-weight:normal; padding:10px 0 10px 20px; font-size:14px; line-height:150%;}
+.ltBoxPopup .actionButtonBox p a{text-decoration:underline; color:#fff;}
+
+
+.unloctdFrnds{margin:0 auto; width:240px; height:255px; background:#fff; box-shadow: 0 1px 5px #c4bfb6; padding:14px;}
+.unloctdFrnds h2{ display:block; font-family:Arial, Helvetica, sans-serif; color:#575351; font-size:14px; font-weight:bold; color:#575351; background:url(../images/arrow-up.png)right 6px no-repeat; border-bottom:1px solid #e5e5e5; padding-bottom:14px;}
+.unloctdFrnds .frndBox{width:238px; height:50px; margin-bottom:5px; overflow:hidden;}
+.unloctdFrnds .frndBox .pic{float:left; display:block; width:50px; height:50px; margin-right:10px; position:relative;}
+.unloctdFrnds .frndBox .info{float:left; display:block; width:178px; height:40px;padding:10px 0 0 0; font-size:11px; color:#393232; line-height:130%; position:relative;}
+.unloctdFrnds .frndBox .info span.name{display:block; font-weight:bold;}
+.unloctdFrnds .frndBox .info span.chFrnd{display:block; font-weight:normal;}
+.unloctdFrnds .frndBox .info span.uncheck{display:inline-block; width:17px; height:18px; background:url(../images/checkbox.png)0 0 no-repeat; position:absolute; left:150px; top:10px;}
+.unloctdFrnds .frndBox .info span.checked{display:inline-block; width:17px; height:18px; background:url(../images/checkbox.png)0 -50px no-repeat;position:absolute; left:150px; top:10px;}
+
+.unloctdFrnds .frndBox .picRollover{display:none; width:36px; height:36px; position:absolute; border:7px solid #d70000;}
+.unloctdFrnds .frndBox .picSelected{display:none; width:44px; height:44px; position:absolute; border:3px solid #d70000;}
+.unloctdFrnds .frndSelected{background:#d70000;}
+.unloctdFrnds .frndSelected span{color:#fff !important;}
+
+
+.srchDestWrap{margin:0 auto; width:240px;}
+.srchDestination{width:240px; background:#fff; box-shadow: 0 1px 5px #c4bfb6; padding:6px 14px; overflow:hidden;}
+.srchDestination .srchFld{float:left; width:210px; background:#ffffff; border:0; font-size:14px; font-weight:bold; color:#575351; padding:4px 0 2px 0; font-family:Arial, Helvetica, sans-serif;}
+.srchDestination .srchFld:focus{outline:none;}
+.srchDestination .srchIcon{float:left; padding:5px 0 5px 10px; border-left:1px solid #d9d9d9; }
+.srchDestination .srchIcon img{cursor:pointer;}
+
+.destSrch{margin:0 auto; width:240px; height:255px; background:#fff; box-shadow: 0 1px 5px #c4bfb6; padding:14px;}
+.destSrch h2{ display:block; font-family:Arial, Helvetica, sans-serif; color:#575351; font-size:14px; font-weight:bold; color:#575351; background:url(../images/arrow-up.png)right 6px no-repeat; border-bottom:1px solid #e5e5e5; padding-bottom:14px;}
+.destSrch .destBox{width:238px; height:50px; margin-bottom:5px; overflow:hidden;}
+.destSrch .destBox .pic{float:left; display:block; width:50px; height:50px; margin-right:10px; position:relative;}
+.destSrch .destBox .info{float:left; display:table-cell; vertical-align:middle; width:178px; height:40px;padding:4px 0 0 0; font-size:11px; color:#393232; line-height:130%; position:relative;}
+.destSrch .destBox .info span.country{display:block; font-weight:bold;}
+.destSrch .destBox .info span.shDest{display:block; font-weight:normal;}
+
+.destSrch .destSelected span{color:#d70000 !important;}
+
+.notifiWrap{width:810px; margin:0 auto; overflow:hidden;}
+.notifiWrap h2.header{font-size:24px; font-weight:bold; color:#575351;padding:20px 10px; background:#fff;}
+.notifiWrap .notifiBox{display:block; overflow:hidden; border:1px solid #cccccc; margin-bottom:5px;}
+.notifiWrap .notifiBox .ltGeryBox{float:left; width:150px; height:120px; background:#efefef; text-align:center; padding-top:30px; font-size:14px;line-height:125%;}
+.notifiWrap .notifiBox .descBox{float:left; padding:15px; width:625px;}
+.notifiWrap .notifiBox .descBox h2{font-size:20px; font-weight:bold; color:#575351;background:#fff;}
+.notifiWrap .notifiBox .descBox p.date{display:block; padding:5px 0 10px 0; font-size:12px;}
+.notifiWrap .notifiBox .descBox p{display:block; font-size:14px; color:#666666; line-height:125%;}

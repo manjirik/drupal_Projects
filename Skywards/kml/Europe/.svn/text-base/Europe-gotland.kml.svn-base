@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document><name>KML file with polygon for bird species range</name>
+<description>Source various books and websites</description>
+<Style id="rangecolour">
+<LineStyle><color>660000FF</color><width>0.1</width></LineStyle>
+<PolyStyle>
+<color>660000FF</color>
+</PolyStyle>
+</Style>
+<Style id="linecolour">
+<LineStyle><color>660000FF</color><width>3</width></LineStyle>
+</Style>
+<Placemark><name>distribution/range</name>
+<description></description>
+<styleUrl>#rangecolour</styleUrl>
+<Polygon>
+<tessellate>1</tessellate><altitudeMode>clampToGround</altitudeMode>
+<outerBoundaryIs><LinearRing><coordinates>
+19.094238,57.984808,0 
+19.35791,57.990632,0 
+19.360657,57.960046,0 
+19.215088,57.944014,0 
+19.006348,57.751076,0 
+18.814087,57.695341,0 
+18.778381,57.618934,0 
+18.803101,57.60275,0 
+18.82782,57.557102,0 
+18.764648,57.527622,0 
+18.808594,57.456771,0 
+18.92395,57.439037,0 
+18.926697,57.397624,0 
+18.786621,57.379861,0 
+18.657532,57.30279,0 
+18.676758,57.28795,0 
+18.748169,57.286465,0 
+18.665771,57.231503,0 
+18.566895,57.20771,0 
+18.38562,57.133258,0 
+18.457031,57.11835,0 
+18.355408,57.073589,0 
+18.347168,57.021299,0 
+18.388367,56.994379,0 
+18.303223,56.938981,0 
+18.182373,56.903004,0 
+18.113708,56.920997,0 
+18.193359,56.991387,0 
+18.204346,57.028774,0 
+18.270264,57.043718,0 
+18.278503,57.078068,0 
+18.196106,57.066124,0 
+18.204346,57.134749,0 
+18.154907,57.148161,0 
+18.127441,57.24488,0 
+18.088989,57.282012,0 
+18.154907,57.329487,0 
+18.157654,57.393184,0 
+18.091736,57.534994,0 
+18.190613,57.598335,0 
+18.264771,57.626288,0 
+18.360901,57.707082,0 
+18.459778,57.828668,0 
+18.564148,57.856443,0 
+18.731689,57.938183,0 
+18.792114,57.847674,0 
+18.849792,57.926517,0 
+19.020081,57.922142,0 
+19.094238,57.984808,0 
+</coordinates></LinearRing></outerBoundaryIs>
+</Polygon>
+</Placemark>
+</Document>
+</kml>

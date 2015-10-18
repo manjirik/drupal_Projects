@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Untitled Document</title>
+	<link href="styles/style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<!--<script type="text/javascript" src="js/jquery.validationEngine.js"></script>-->
+	<script type="text/javascript" src="js/jquery.jqtransform.js"></script>
+	<script type="text/javascript" src="js/fileuploader.js"></script>
+	<script language="javascript">
+		$(function(){
+			$('form').jqTransform();
+		});
+		
+		 function createUploader(){            
+            var uploader = new qq.FileUploader({
+                element: document.getElementById('file-uploader-demo1'),
+                action: 'do-nothing.htm',
+                debug: true
+            });           
+        }
+        
+        // in your app create uploader as soon as the DOM is ready
+        // don't wait for the window to load  
+        window.onload = createUploader;   
+	</script>
+	</head>
+
+	<body>
+    <div id="musician1">
+      <form id="formID" method="post">
+        <div id="musicstep1">
+          <div class="content">
+            <div class="heading"><img src="images/zoneReg.jpg" /></div>
+            <div class="col1">
+              <div class="fleft txtfieldBg">
+                <input value="" type="text" name="req" id="req" />
+              </div>
+              <div class="fleft txtfieldBg"> <span class="errorImg"><img src="images/errorImg.jpg" /></span>
+                <input type="text" value="Email" />
+                <span class="errorTxt">Please enter a valid email address</span> </div>
+              <div class="fleft txtfieldBg"> <span class="errorImg"><img src="images/errorImg.jpg" /></span>
+                <input type="password" value="Password" />
+                <span class="errorTxt">Please enter a valid password</span> </div>
+              <div class="clear"></div>
+              <div class="radioBox">
+                <label class="labelMain">Male</label>
+                <input type="radio" name="question" value="non"/>
+              </div>
+              <div class="radioBox">
+                <label class="labelMain">Female</label>
+                <input type="radio" name="question" value="non"/>
+              </div>
+            </div>
+            <div class="col1">
+              <div class="fleft txtfieldBg">
+                <input type="text" value="Full Name" />
+                <p class="noticeInfo">Names are never made public<span><img src="images/require.gif" /></span></p>
+              </div>
+              <div class="fleft txtfieldBg"> <span class="errorImg"><img src="images/errorImg.jpg" /></span>
+                <input type="text" value="Confirm Email" />
+                <span class="errorTxt">Entered email address doesn't match</span> </div>
+              <div class="fleft txtfieldBg"> <span class="errorImg"><img src="images/errorImg.jpg" /></span>
+                <input type="password" value="Repeat password" />
+                <span class="errorTxt">Entered password doesn't match</span> </div>
+              <div class="clear"> </div>
+            </div>
+          </div>
+          <div class="saparator"></div>
+          <div class="clear content_bottom">
+            <div class="left"> <a href="#" class="findVideo"><img src="images/listenerVideobg.png" /></a>
+              <p><a href="#">Find out</a> why other listerns choose DMMCompany®
+                as their number one source of creative music.</p>
+            </div>
+            <div class="right">
+              <ul>
+                <li> <a href="#"> Back</a> </li>
+                <li><a href="#">Next</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="musicstep2">
+          <div class="content padBtm1">
+            <div class="heading"><img src="images/zoneReg.jpg" /></div>
+            <div class="col1 padZero">
+              <div class="fleft type">
+                <label>Musician type <span>(if applicable)</span></label>
+                <select>
+                  <option>world famous</option>
+                  <option>world famous</option>
+                </select>
+              </div>
+              <div class="fleft urlSecfacebook pos"> <span class="errorImg2"><img src="images/errorImg.jpg" /></span>
+                <input type="text" value="Email" />
+                <span class="errorTxt2">Please enter a valid email address</span> </div>
+              <div class="personalWeb">Personal website</div>
+              <div class="fleft urlSecpersonal marZero pos"> <span class="errorImg2"><img src="images/errorImg.jpg" /></span>
+                <input type="text" value="Email" />
+                <span class="errorTxt2">Please enter a valid email address</span> </div>
+              <div class="clear"></div>
+            </div>
+            <div class="col1 padZero">
+              <div class="type">
+                <label>Years making music<span>(if applicable)</span></label>
+              </div>
+              <div class="fleft txtfieldBg marZero">
+                <input type="text" value="" />
+              </div>
+              <div class="fleft urlSectwitter pos"> <span class="errorImg2"><img src="images/errorImg.jpg" /></span>
+                <input type="text" value="Email" />
+                <span class="errorTxt2">Please enter a valid email address</span> </div>
+              <div class="clear"> </div>
+            </div>
+          </div>
+          <div class="saparator"></div>
+          <div class="clear content_bottom">
+            <div class="left"> <a href="#" class="findVideo"><img src="images/listenerVideobg.png" /></a>
+              <p>Musicians and companies can use the same registration to get started.</p>
+            </div>
+            <div class="right">
+              <ul>
+                <li> <a href="#"> Back</a> </li>
+                <li><a href="#">Next</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="musicstep3">
+          <div class="content">
+            <div class="heading padBtm"><img src="images/zoneReg.jpg" /></div>
+            <div class="col3 avatar">
+              <div>
+                <label>Avatar<span class="option">(optional)</span> </label>
+                <div><img src="images/img1.jpg" width="157" height="109" /></div>
+              </div>              
+              <div>
+                <label class="greyTxt1">Add your logo, face or graphic<span>64x64px | 2MB max</span></label>
+              </div>
+              <div id="file-uploader-demo1">
+                <noscript>
+                <p>Please enable JavaScript to use file uploader.</p>
+                <!-- or put a simple form for upload here -->
+                </noscript>
+              </div>
+              <!--<input type="button" value="Upload Avatar" class="button"/>--> 
+            </div>
+            <div class="col4">
+              <div class="fleft">
+                <label class="labelMain">Zone Image<span class="option">(optional)</span></label>
+                <div><img src="images/img2.jpg" width="299" height="109" /></div>
+              </div>
+              <div class="fleft">
+                <label class="labelMain greyTxt1">Choose your best image and stand out from the crowd.<span>1200x700px | 2MB max</span></label>
+              </div>
+              <!--<input type="button" value="Upload a zone image" class="button" />-->
+              <div id="file-uploader-demo1">
+                <noscript>
+                <p>Please enable JavaScript to use file uploader.</p>
+                <!-- or put a simple form for upload here -->
+                </noscript>
+              </div>
+            </div>
+          </div>
+          <div class="saparator"></div>
+          <div class="clear content_bottom">
+            <div class="left"> <a href="#" class="findVideo"><img src="images/listenerVideobg.png" /></a>
+              <p>Upload images that best represent your music, style and
+                music or product, or service.</p>
+            </div>
+            <div class="right">
+              <ul>
+                <li> <a href="#"> Back</a> </li>
+                <li><a href="#">Next</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="musicstep4">
+          <div class="content">
+            <div class="heading marTop"><img src="images/zoneReg.jpg" /></div>
+            <div class="col5">
+              <div class="fleft">
+                <div>
+                  <textarea name="" cols="" rows="" class="infoTxt"></textarea>
+                </div>
+                <span class="number">578</span> </div>
+            </div>
+            <div class="col6">
+              <div class="fleft coutry">
+                <select>
+                  <option>Country</option>
+                </select>
+              </div>
+              <div class="box">Are You human? <img src="images/secure_code.gif" width="156" height="50" alt="" title="" class="secure_code"/>
+                <div class="codefieldBg">
+                  <input type="text" value="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="saparator clear"></div>
+          <div class="clear content_bottom">
+            <div class="left"> <a href="#" class="findVideo"><img src="images/listenerVideobg.png" /></a>
+              <p><a href="#">Find out</a> why other listerns choose DMMCompany®
+                as their number one source of creative music.</p>
+            </div>
+            <div class="right">
+              <ul>
+                <li> <a href="#"> Back</a> </li>
+                <li><a href="#">Finish</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+</body>
+</html>

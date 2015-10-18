@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+/* style */
+.pannelInnerShadow { box-shadow:inset 1px 1px 4px #111; } 
+.pannelInnerShadowAllside { box-shadow:inset 0px 0px 10px #111; } 
+.pannelInnerShadowAllside_1 { box-shadow:inset 0px 0px 8px #111, 1px 1px 0px #666; } 
+
+.pannelDarkNoise { background-color:#333;}
+.pannelLightCrossLine {background-color:#333;}
+.pannelRedButton {background-color:#333;}
+.pannelPopup {background-color:#333;}
+.textAreaBG {background-color:#333;}
+
+
+
+

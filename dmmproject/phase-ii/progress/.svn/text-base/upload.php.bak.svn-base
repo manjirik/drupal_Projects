@@ -1,0 +1,8 @@
+<?php
+if(isset($_REQUEST['progress_key'])) {
+ 
+  $status = apc_fetch('upload_'.$_GET['progress_key']);
+  echo "hello".$status['current']/$status['total']*100;
+ 
+}
+?>

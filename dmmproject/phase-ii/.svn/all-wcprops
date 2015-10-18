@@ -1,0 +1,515 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/creatives/!svn/ver/8523/2011/helen-marie/dmmcompany/trunk/phase-II
+END
+videoPopup.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/creatives/!svn/ver/3217/2011/helen-marie/dmmcompany/trunk/phase-II/videoPopup.php
+END
+welcome.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/creatives/!svn/ver/8514/2011/helen-marie/dmmcompany/trunk/phase-II/welcome.php
+END
+add_hit.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/creatives/!svn/ver/2620/2011/helen-marie/dmmcompany/trunk/phase-II/add_hit.php
+END
+player.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/creatives/!svn/ver/3007/2011/helen-marie/dmmcompany/trunk/phase-II/player.php
+END
+edit_account.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/creatives/!svn/ver/8392/2011/helen-marie/dmmcompany/trunk/phase-II/edit_account.php
+END
+save_songs_setting.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/creatives/!svn/ver/6395/2011/helen-marie/dmmcompany/trunk/phase-II/save_songs_setting.php
+END
+getprogress.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/creatives/!svn/ver/2620/2011/helen-marie/dmmcompany/trunk/phase-II/getprogress.php
+END
+player_script_search.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/creatives/!svn/ver/2623/2011/helen-marie/dmmcompany/trunk/phase-II/player_script_search.php
+END
+count_time.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/creatives/!svn/ver/2620/2011/helen-marie/dmmcompany/trunk/phase-II/count_time.php
+END
+userLogin.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/creatives/!svn/ver/3900/2011/helen-marie/dmmcompany/trunk/phase-II/userLogin.php
+END
+notify.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/creatives/!svn/ver/5016/2011/helen-marie/dmmcompany/trunk/phase-II/notify.php
+END
+country.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/creatives/!svn/ver/2620/2011/helen-marie/dmmcompany/trunk/phase-II/country.xml
+END
+toggleCommentBox.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/creatives/!svn/ver/4399/2011/helen-marie/dmmcompany/trunk/phase-II/toggleCommentBox.php
+END
+listenerRegistration.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/creatives/!svn/ver/8518/2011/helen-marie/dmmcompany/trunk/phase-II/listenerRegistration.php
+END
+songsDownload.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/creatives/!svn/ver/2620/2011/helen-marie/dmmcompany/trunk/phase-II/songsDownload.php
+END
+song_billboard_preview.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/creatives/!svn/ver/7347/2011/helen-marie/dmmcompany/trunk/phase-II/song_billboard_preview.php
+END
+userForgotPassword.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/creatives/!svn/ver/3815/2011/helen-marie/dmmcompany/trunk/phase-II/userForgotPassword.php
+END
+advAdd.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/creatives/!svn/ver/2620/2011/helen-marie/dmmcompany/trunk/phase-II/advAdd.php
+END
+playlist_song_share_xml.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/creatives/!svn/ver/8205/2011/helen-marie/dmmcompany/trunk/phase-II/playlist_song_share_xml.php
+END
+scriptRemoveJunkFiles.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/creatives/!svn/ver/7341/2011/helen-marie/dmmcompany/trunk/phase-II/scriptRemoveJunkFiles.php
+END
+storeSongDetailsAjax.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/creatives/!svn/ver/7098/2011/helen-marie/dmmcompany/trunk/phase-II/storeSongDetailsAjax.php
+END
+aboutDmmCompany.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/creatives/!svn/ver/2646/2011/helen-marie/dmmcompany/trunk/phase-II/aboutDmmCompany.php
+END
+generateWaveForm.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/creatives/!svn/ver/7437/2011/helen-marie/dmmcompany/trunk/phase-II/generateWaveForm.php
+END
+musicReview.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/creatives/!svn/ver/2620/2011/helen-marie/dmmcompany/trunk/phase-II/musicReview.php
+END
+playlist_share_xml.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/creatives/!svn/ver/8204/2011/helen-marie/dmmcompany/trunk/phase-II/playlist_share_xml.php
+END
+isUserAlreadyVisited.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/creatives/!svn/ver/3102/2011/helen-marie/dmmcompany/trunk/phase-II/isUserAlreadyVisited.php
+END
+editProfile.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/creatives/!svn/ver/2902/2011/helen-marie/dmmcompany/trunk/phase-II/editProfile.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/creatives/!svn/ver/8511/2011/helen-marie/dmmcompany/trunk/phase-II/index.php
+END
+loadMusicianSongDummyList.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/creatives/!svn/ver/8202/2011/helen-marie/dmmcompany/trunk/phase-II/loadMusicianSongDummyList.php
+END
+songStatus.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/creatives/!svn/ver/2641/2011/helen-marie/dmmcompany/trunk/phase-II/songStatus.php
+END
+regCheckUser.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/creatives/!svn/ver/2659/2011/helen-marie/dmmcompany/trunk/phase-II/regCheckUser.php
+END
+getNotifyStatus.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/creatives/!svn/ver/4344/2011/helen-marie/dmmcompany/trunk/phase-II/getNotifyStatus.php
+END
+adddisplay_old.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/creatives/!svn/ver/2620/2011/helen-marie/dmmcompany/trunk/phase-II/adddisplay_old.php
+END
+adddisplay.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/creatives/!svn/ver/2620/2011/helen-marie/dmmcompany/trunk/phase-II/adddisplay.php
+END
+new_column.sql
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/creatives/!svn/ver/8521/2011/helen-marie/dmmcompany/trunk/phase-II/new_column.sql
+END
+hits_count.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/creatives/!svn/ver/2620/2011/helen-marie/dmmcompany/trunk/phase-II/hits_count.php
+END
+songCommentsAjax.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/creatives/!svn/ver/2620/2011/helen-marie/dmmcompany/trunk/phase-II/songCommentsAjax.php
+END
+song_hit_count.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/creatives/!svn/ver/2620/2011/helen-marie/dmmcompany/trunk/phase-II/song_hit_count.php
+END
+isUserLoggedIn.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/creatives/!svn/ver/5133/2011/helen-marie/dmmcompany/trunk/phase-II/isUserLoggedIn.php
+END
+upload.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/creatives/!svn/ver/3814/2011/helen-marie/dmmcompany/trunk/phase-II/upload.php
+END
+register.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/creatives/!svn/ver/2642/2011/helen-marie/dmmcompany/trunk/phase-II/register.php
+END
+songs_setting.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/creatives/!svn/ver/8513/2011/helen-marie/dmmcompany/trunk/phase-II/songs_setting.php
+END
+userLogin2.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/creatives/!svn/ver/3901/2011/helen-marie/dmmcompany/trunk/phase-II/userLogin2.php
+END
+string_search.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/creatives/!svn/ver/2620/2011/helen-marie/dmmcompany/trunk/phase-II/string_search.php
+END
+addStatus.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/creatives/!svn/ver/2647/2011/helen-marie/dmmcompany/trunk/phase-II/addStatus.php
+END
+checkSongDownload.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/creatives/!svn/ver/2620/2011/helen-marie/dmmcompany/trunk/phase-II/checkSongDownload.php
+END
+commentLoaderAjax.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/creatives/!svn/ver/2620/2011/helen-marie/dmmcompany/trunk/phase-II/commentLoaderAjax.php
+END
+phpinfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/creatives/!svn/ver/2620/2011/helen-marie/dmmcompany/trunk/phase-II/phpinfo.php
+END
+search.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/creatives/!svn/ver/2620/2011/helen-marie/dmmcompany/trunk/phase-II/search.php
+END
+login.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/creatives/!svn/ver/2877/2011/helen-marie/dmmcompany/trunk/phase-II/login.php
+END
+logout.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/creatives/!svn/ver/8516/2011/helen-marie/dmmcompany/trunk/phase-II/logout.php
+END
+saveAdvertiseAjax.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/creatives/!svn/ver/2620/2011/helen-marie/dmmcompany/trunk/phase-II/saveAdvertiseAjax.php
+END
+getSongCreditDetailsAjax.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/creatives/!svn/ver/8523/2011/helen-marie/dmmcompany/trunk/phase-II/getSongCreditDetailsAjax.php
+END
+validateCaptcha.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/creatives/!svn/ver/2839/2011/helen-marie/dmmcompany/trunk/phase-II/validateCaptcha.php
+END
+checkUserName.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/creatives/!svn/ver/2693/2011/helen-marie/dmmcompany/trunk/phase-II/checkUserName.php
+END
+playlist_xml.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/creatives/!svn/ver/7010/2011/helen-marie/dmmcompany/trunk/phase-II/playlist_xml.php
+END
+generateWaveAjax.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/creatives/!svn/ver/7062/2011/helen-marie/dmmcompany/trunk/phase-II/generateWaveAjax.php
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/creatives/!svn/ver/8507/2011/helen-marie/dmmcompany/trunk/phase-II/.htaccess
+END
+saveSongImage.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/creatives/!svn/ver/5856/2011/helen-marie/dmmcompany/trunk/phase-II/saveSongImage.php
+END
+redirect_musician.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/creatives/!svn/ver/2620/2011/helen-marie/dmmcompany/trunk/phase-II/redirect_musician.php
+END
+isEmailAlreadyRegister.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/creatives/!svn/ver/5179/2011/helen-marie/dmmcompany/trunk/phase-II/isEmailAlreadyRegister.php
+END
+billboard.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/creatives/!svn/ver/4086/2011/helen-marie/dmmcompany/trunk/phase-II/billboard.php
+END
+del_song.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/creatives/!svn/ver/7107/2011/helen-marie/dmmcompany/trunk/phase-II/del_song.php
+END
+songsAdd.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/creatives/!svn/ver/2620/2011/helen-marie/dmmcompany/trunk/phase-II/songsAdd.php
+END
+musicianRegistration.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/creatives/!svn/ver/8156/2011/helen-marie/dmmcompany/trunk/phase-II/musicianRegistration.php
+END
+isUserLogin.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/creatives/!svn/ver/3018/2011/helen-marie/dmmcompany/trunk/phase-II/isUserLogin.php
+END
+country.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/creatives/!svn/ver/2677/2011/helen-marie/dmmcompany/trunk/phase-II/country.php
+END
+getsongname.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/creatives/!svn/ver/2620/2011/helen-marie/dmmcompany/trunk/phase-II/getsongname.php
+END
+getmusicianname.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/creatives/!svn/ver/4355/2011/helen-marie/dmmcompany/trunk/phase-II/getmusicianname.php
+END
+uploadSong.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/creatives/!svn/ver/6574/2011/helen-marie/dmmcompany/trunk/phase-II/uploadSong.php
+END
+getReviewDetailsAjax.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/creatives/!svn/ver/8509/2011/helen-marie/dmmcompany/trunk/phase-II/getReviewDetailsAjax.php
+END
+saveSongsAjax.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/creatives/!svn/ver/7270/2011/helen-marie/dmmcompany/trunk/phase-II/saveSongsAjax.php
+END
+player_script.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/creatives/!svn/ver/8517/2011/helen-marie/dmmcompany/trunk/phase-II/player_script.php
+END
+messageMusicianAjax.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/creatives/!svn/ver/7619/2011/helen-marie/dmmcompany/trunk/phase-II/messageMusicianAjax.php
+END
+validateLogin.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/creatives/!svn/ver/5567/2011/helen-marie/dmmcompany/trunk/phase-II/validateLogin.php
+END
+forgotPassword.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/creatives/!svn/ver/5023/2011/helen-marie/dmmcompany/trunk/phase-II/forgotPassword.php
+END
+services.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/creatives/!svn/ver/8512/2011/helen-marie/dmmcompany/trunk/phase-II/services.php
+END
+getMusicianAboutInfoAjax.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/creatives/!svn/ver/8523/2011/helen-marie/dmmcompany/trunk/phase-II/getMusicianAboutInfoAjax.php
+END
+regAddUser.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/creatives/!svn/ver/5803/2011/helen-marie/dmmcompany/trunk/phase-II/regAddUser.php
+END
+comments.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/creatives/!svn/ver/2623/2011/helen-marie/dmmcompany/trunk/phase-II/comments.php
+END
+saveCommentAjax.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/creatives/!svn/ver/7364/2011/helen-marie/dmmcompany/trunk/phase-II/saveCommentAjax.php
+END
+saveEditProfile.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/creatives/!svn/ver/4032/2011/helen-marie/dmmcompany/trunk/phase-II/saveEditProfile.php
+END
+generateWaveFormScript.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/creatives/!svn/ver/7088/2011/helen-marie/dmmcompany/trunk/phase-II/generateWaveFormScript.php
+END
+ajax_upload.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/creatives/!svn/ver/7123/2011/helen-marie/dmmcompany/trunk/phase-II/ajax_upload.php
+END
+playlist_first_xml.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/creatives/!svn/ver/7007/2011/helen-marie/dmmcompany/trunk/phase-II/playlist_first_xml.php
+END

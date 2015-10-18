@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="musician1">
+  <div class="content">
+  <form class="jqtransform">
+    <div class="heading"><img src="images/listenerTxt.png" /></div>
+    <!--<div class="col5">
+      <div class="fleft">
+        <label>About you</label>
+         <div><textarea name="" cols="" rows="" class="textarea"></textarea></div>
+      </div>
+     
+     
+      
+    </div>-->
+    <div style="clear:both">&nbsp;</div>
+    <div class="avtar">
+    	<p class="head">Add a face to your comments</p>
+        <img src="images/avtar.gif" width="157" height="109" alt="" title="" />
+        <div class="features">
+        	<p><strong>64 x 64</strong> recommended</p>
+            <p><strong>10MB max</strong></p>
+        </div>
+       <div style="text-align:center"> <input type="button" value="Upload avatar" class="upload_avtar"/></div>
+    </div>
+    <div class="col6" style="padding-top:30px">
+      <div class="fleft">
+    <select><option>----Select----</option></select>
+      </div>
+     <div class="box"><strong>Are You human?</strong>
+     <img src="images/secure_code.gif" width="156" height="50" alt="" title="" class="secure_code"/>
+     <input type="text" value="" />
+     </div>    
+
+    </div>
+    <!--<div class="clear content_bottom">
+        <div class="left" style="width:263px"> <img src="images/video_icon.png" width="11" height="6" /> Find out why other listerns choose DMMCompany®
+as their number one source of creative music.</div>
+         <div class="right">
+         <ul>
+          <li>
+            <a href="#"> Back</a>
+          </li>
+          <li><a href="#">Finish</a></li>
+         </ul>
+         
+         </div>
+    </div>-->
+    </form>
+  </div>
+  <div class="saparator"></div>
+    <div class="clear content_bottom">
+        <div class="left"> 
+             <a href="#" class="findVideo"><img src="images/listenerVideobg.png" /></a>
+             <p><a href="#">Find out</a> why other listerns choose DMMCompany®
+as their number one source of creative music</p>
+        </div>
+         <div class="right">
+         <ul>
+          <li>
+            <a href="#"> Back</a>
+          </li>
+          <li><a href="#">Next</a></li>
+         </ul>         
+         </div>
+    </div>
+</div>
+<div class="logoSec">
+                 <div class="logo">
+                      <span>Version 9.0.0</span>
+                      <div class="txt12">
+                            <img src="images/logo.png" />
+                      </div>
+                 </div>
+           </div>
+</body>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/jquery.jqtransform.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+    //find all form with class jqtransform and apply the plugin
+    $("form.jqtransform").jqTransform();
+});
+</script>
+</html>

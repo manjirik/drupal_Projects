@@ -1,0 +1,36 @@
+
+/*  Styling for Suggestion Box Container  */
+.suggestionsBox {
+	position: absolute;
+	right:-3px;
+	bottom:29px;
+	width: 293px;
+	color: #fff;
+	padding: 30px 0;
+	background:url(../../images/search_results_bg.png) repeat-x scroll left top;
+}
+
+.suggestionList {
+	margin: 0px;
+	padding: 0px;
+	bottom: 0px;
+}
+.suggestionList ul{
+	display:block;
+}
+
+/*  Individual Search Results  */
+.suggestionList li {
+	font-size:10px;
+	padding: 5px 15px;
+	color:#7c7c7c;
+	text-shadow: 0 1px 0 #E1E1E1;
+	cursor: pointer;
+	list-style-type: none;
+}
+
+/*  Hover effect  */
+.suggestionList li:hover {
+font-weight: normal;
+color:#2a73be;
+}

@@ -1,0 +1,244 @@
+#dialogReviewDetails {width: 542px; height: 264px;}
+#dialogAboutMusicianDetails {width: 542px; height: 273px;}
+#dialogCreditDetails {width: 542px; height: 239px;}
+
+.creditWindow {
+	background-color: #FDFDFD;
+	border: 1px solid #C4C4C4;
+	/*box-shadow: 3px 2px 20px 8px #C4C4C4;*/
+	height: 239px;
+	/*left: 2%;*/
+	position: absolute;
+	/*top: 107px;*/
+	width: 542px;
+	z-index: 9999;
+}
+
+.no_credit{
+	text-align:center;
+	padding-right:48px;
+	padding-top:37px;
+}
+
+.creditHeader {
+	border-bottom: 1px solid #C4C4C4;
+	height: 47px;
+	width: 542px;
+	text-align: center;
+	line-height: 47px;
+	position: relative;
+	color: #000000;
+    display: inline-block;
+    font-family: HelveticaNeue,Arial,sans-serif;
+    font-size: 17px;
+    text-align: center;
+	
+}
+.creditHeader p {
+	font-family: HelveticaNeue, Arial, sans-serif;
+	color: #000000;
+	display: inline-block;
+	font-size: 18px;
+	text-align: center;
+}
+.creditHeader p span {
+	font-weight: 700;
+	margin-right: 5px;
+}
+.creditWindow .creditHeader img {
+	cursor: pointer;
+	position: absolute;
+	right: 20px;
+	bottom: 16px;
+}
+.creditCategories {
+	padding: 35px 0 5px 37px;
+}
+.creditCategories p {
+	line-height: 24px;
+	color: #666666;
+	font-size: 14px
+}
+.category {
+	font-family: Arial, Helvetica, sans-serif;
+	
+	font-weight: 700;
+}
+.zoneUrl {
+	font-family:Helvetica,Arial,  sans-serif;
+	font-weight:700;
+	position: absolute;
+	right: 5px;
+	bottom: 6px;
+}
+
+.zoneUrl a
+{
+ margin-right:4px;
+	margin-bottom:1px;
+} 
+/************************/
+/************************Musician Info Css***********************************************************/
+.popUpWindow {
+	border: 1px solid #C4C4C4;
+	height: 273px;
+	/*left: 2%;*/
+	position: absolute;
+	/*top: 107px;*/
+	width: 542px;
+	z-index: 9999;
+	background:#ffffff;
+}
+.popUpWindowHeader {
+	border-bottom: 1px solid #C4C4C4;
+	height: 54px;
+	text-align: center;
+	line-height: 54px;
+	position: relative;
+	color: #000000;
+}
+.popUpWindow .popUpWindowHeader img {
+	cursor: pointer;
+	position: absolute;
+	right: 20px;
+	bottom: 16px;
+}
+/**********************************/
+
+.popUpContent span {
+	color: #c4c4c4;
+}
+.popUpContent p {
+	color: #8d8d8d;
+	margin-top: 6px;
+	font-size: 12px;
+	font-family: Helvetica, Arial, sans-serif;
+	clear:both;
+}
+ .popUpWindow .popUpContent {
+	height: 145px;
+	overflow: auto;
+	margin-top: 17px;
+}
+.popUpWindow .popUpWindowHeader .popUplH2 {
+	color: #000000;
+	font-size: 16px;
+	font-weight: 100;
+	margin: 0;
+	text-align: center;
+}
+.popUpWindow .popUpWindowHeader .popUplH2 strong {
+	font-weight: 700;
+}
+.textContainer {
+	display: block;
+	/*float: left;*/
+	padding-left: 35px;
+	padding-right: 53px;
+	color: #8D8D8D;
+	font-size: 12px;
+	line-height: 18px;
+}
+/*********************/
+
+.modelDesc {
+    clear: both;
+    width: 500px;
+}
+
+.modelDesc ul li {
+	display: block;
+	float: left;
+	font-weight: 700;
+	color: #333333;
+}
+
+
+
+.status,.country,.experience{
+	width: 120px;
+}
+
+.aboutModelContent {
+	padding-top: 10px;
+	font-size: 12px;
+	clear:both;
+}
+#popPanel .footer {
+	padding: 30px 16px 9px 35px;
+}
+#popPanel .footer .footerLft {
+	width: 347px;
+	float: left;
+}
+#popPanel .footer .footerRgt {
+	width: 141px;
+	float: left;
+}
+#popPanel .footer .footerRgt a {
+	padding-right: 20px;
+}
+
+/************************Review pop up Css***********************************************************/
+.reviewWindow {
+	border: 1px solid #C4C4C4;
+	height: 264px;
+	/*left: 2%;*/
+	position: absolute;
+	/*top: 107px;*/
+	width: 542px;
+	z-index: 9999;
+	background: url(../images/yellowDisc.png) no-repeat 426px 47px #ffffff;
+}
+.reviwWindowHeader {
+	border-bottom: 1px solid #C4C4C4;
+	height: 47px;
+	text-align: center;
+	line-height: 47px;
+	position: relative;
+	color: #000000;
+}
+
+#reviewMainWrapper .reviewPane p
+{
+	margin-top:2px;
+	line-height: 17px;
+}
+
+.reviewWindow .reviwWindowHeader img {
+	cursor: pointer;
+	position: absolute;
+	right: 10px;
+	top: 16px;
+}
+
+.reviewPane span {
+	color: #c4c4c4;
+	display: block;
+}
+.reviewPane p {
+	color: #8d8d8d;
+	margin-top: 6px;
+	font-size:12px;
+	font-family:Helvetica,Arial,  sans-serif;
+}
+#reviewPanel .reviewWindow .reviewPane {
+	height: 145px;
+	overflow: auto;
+	width: 539px;
+	margin-top: 30px;
+	width:530px !important;
+}
+.reviewWindow .reviwWindowHeader .reviewH2 {
+	color: #000000;
+	font-size: 16px;
+	font-weight: 100;
+	margin: 0;
+	text-align: center;
+}
+.reviewWindow .reviwWindowHeader .reviewH2 strong {
+	font-weight: 700;
+}
+.clear {
+	clear: both
+}

@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/creatives/!svn/ver/14183/2013/Blue_Barracuda/Skywards/trunk/admin
+END
+changeStoryStatus.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/creatives/!svn/ver/10596/2013/Blue_Barracuda/Skywards/trunk/admin/changeStoryStatus.php
+END
+adminUpdate.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/creatives/!svn/ver/10286/2013/Blue_Barracuda/Skywards/trunk/admin/adminUpdate.php
+END
+validateAdminLogin.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/creatives/!svn/ver/10286/2013/Blue_Barracuda/Skywards/trunk/admin/validateAdminLogin.php
+END
+footer.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/creatives/!svn/ver/10286/2013/Blue_Barracuda/Skywards/trunk/admin/footer.php
+END
+notificationmessageUpdate.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/creatives/!svn/ver/12223/2013/Blue_Barracuda/Skywards/trunk/admin/notificationmessageUpdate.php
+END
+edit_notification_message.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/creatives/!svn/ver/12513/2013/Blue_Barracuda/Skywards/trunk/admin/edit_notification_message.php
+END
+drawUpdate.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/creatives/!svn/ver/14158/2013/Blue_Barracuda/Skywards/trunk/admin/drawUpdate.php
+END
+edit_admin_user_details.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/creatives/!svn/ver/10286/2013/Blue_Barracuda/Skywards/trunk/admin/edit_admin_user_details.php
+END
+deleteRecord.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/creatives/!svn/ver/10286/2013/Blue_Barracuda/Skywards/trunk/admin/deleteRecord.php
+END
+searchList.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/creatives/!svn/ver/10657/2013/Blue_Barracuda/Skywards/trunk/admin/searchList.php
+END
+exportExcel.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/creatives/!svn/ver/10286/2013/Blue_Barracuda/Skywards/trunk/admin/exportExcel.php
+END
+cityList.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/creatives/!svn/ver/10593/2013/Blue_Barracuda/Skywards/trunk/admin/cityList.php
+END
+adminUsersList.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/creatives/!svn/ver/10286/2013/Blue_Barracuda/Skywards/trunk/admin/adminUsersList.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/creatives/!svn/ver/10286/2013/Blue_Barracuda/Skywards/trunk/admin/index.php
+END
+edit_draw_details.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/creatives/!svn/ver/14180/2013/Blue_Barracuda/Skywards/trunk/admin/edit_draw_details.php
+END
+logOut.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/creatives/!svn/ver/10286/2013/Blue_Barracuda/Skywards/trunk/admin/logOut.php
+END
+userList.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/creatives/!svn/ver/10593/2013/Blue_Barracuda/Skywards/trunk/admin/userList.php
+END
+changeFeaturedStoryStatus.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/creatives/!svn/ver/10596/2013/Blue_Barracuda/Skywards/trunk/admin/changeFeaturedStoryStatus.php
+END
+cityUpdate.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/creatives/!svn/ver/13456/2013/Blue_Barracuda/Skywards/trunk/admin/cityUpdate.php
+END
+userStoryList.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/creatives/!svn/ver/10593/2013/Blue_Barracuda/Skywards/trunk/admin/userStoryList.php
+END
+drawDetailList.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/creatives/!svn/ver/14181/2013/Blue_Barracuda/Skywards/trunk/admin/drawDetailList.php
+END
+winnerDetailList.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/creatives/!svn/ver/14255/2013/Blue_Barracuda/Skywards/trunk/admin/winnerDetailList.php
+END
+edit_city_details.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/creatives/!svn/ver/13456/2013/Blue_Barracuda/Skywards/trunk/admin/edit_city_details.php
+END
+changeCityStatus.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/creatives/!svn/ver/10286/2013/Blue_Barracuda/Skywards/trunk/admin/changeCityStatus.php
+END
+notificationMessageList.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/creatives/!svn/ver/12560/2013/Blue_Barracuda/Skywards/trunk/admin/notificationMessageList.php
+END
+changeUserStatus.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/creatives/!svn/ver/10596/2013/Blue_Barracuda/Skywards/trunk/admin/changeUserStatus.php
+END
+header.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/creatives/!svn/ver/10286/2013/Blue_Barracuda/Skywards/trunk/admin/header.php
+END
+home.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/creatives/!svn/ver/10286/2013/Blue_Barracuda/Skywards/trunk/admin/home.php
+END

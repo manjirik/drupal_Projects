@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Untitled Document</title>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.jqtransform.js"></script>
+	<script language="javascript">
+		$(function(){
+			$('form').jqTransform({imgPath:'images/'});
+			
+		});
+	</script>
+	<link href="styles/style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="styles/jqtransform.css"  />
+	</head>
+
+	<body>
+    <div id="musician1">
+      <div class="content">
+        <form action="" method="post">
+          <div class="heading">Zone<strong>Registration</strong></div>
+          <div class="col1">
+            <div class="fleft rowElem">
+              <label class="labelMain">Zone Name</label>
+              <input type="text" value="" />
+            </div>
+            <div class="fleft rowElem">
+              <label class="labelMain">Email &nbsp;</label>
+              <input type="text" value="" />
+            </div>
+            <div class="fleft rowElem">
+              <label class="labelMain">Password</label>
+              <input type="text" value="" />
+            </div>
+            <div class="clear">
+              <div class=" rowElem">
+                <label class="labelMain">Male</label>
+                <input type="checkbox" value=""  class="checkboxstyle "/>
+              </div>
+              <div class="checkbox rowElem">
+                <label class="labelMain">Female</label>
+                <input type="checkbox" value="" class="" />
+              </div>
+            </div>
+          </div>
+          <div class="col2">
+            <div class="fleft rowElem">
+              <label class="labelMain">Full Name <span>Names are never made public</span></label>
+              <input type="text" value="" />
+            </div>
+            <div class="fleft rowElem">
+              <label class="labelMain">Confirm email</label>
+              <input type="text" value="" />
+            </div>
+            <div class="fleft rowElem">
+              <label class="labelMain">Repeat Password</label>
+              <input type="text" value="" />
+            </div>
+          </div>
+          <div class="clear content_bottom">
+            <div class="left"> <img src="images/video_icon.png" width="11" height="6" /> &nbsp;Musicians and companies can use the same registration
+              to get started.</div>
+            <div class="right">
+              <ul>
+                <li> <a href="#"> Back</a> </li>
+                <li><a href="#">Next</a></li>
+              </ul>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+</body>
+</html>

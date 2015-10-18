@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document><name>My document</name>
+<description>Content</description>
+<Style id="Lump">
+<LineStyle><color>660000FF</color><width>0.1</width></LineStyle>
+<PolyStyle><color>660000FF</color></PolyStyle>
+</Style>
+<Style id="Path">
+<LineStyle><color>660000FF</color><width>3</width></LineStyle>
+</Style>
+<Placemark><name>NAME</name>
+<description>YES</description>
+<styleUrl>#Lump</styleUrl>
+<Polygon>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<outerBoundaryIs><LinearRing>
+
+<coordinates>
+43.253174,-11.404649,0.0 
+43.253174,-11.512322,0.0 
+43.231201,-11.695273,0.0 
+43.209229,-11.738302,0.0 
+43.330078,-11.845847,0.0 
+43.406982,-11.899604,0.0 
+43.505859,-11.910354,0.0 
+43.494873,-11.878102,0.0 
+43.450928,-11.824341,0.0 
+43.439941,-11.695273,0.0 
+43.406982,-11.609193,0.0 
+43.395996,-11.490791,0.0 
+43.395996,-11.415418,0.0 
+43.308105,-11.372339,0.0 
+
+</coordinates></LinearRing></outerBoundaryIs>
+</Polygon>
+</Placemark>
+</Document>
+</kml>

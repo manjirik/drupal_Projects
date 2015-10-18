@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.jqtransform.js"></script>
+<script type="text/javascript" src="js/jquery.textshadow.js"></script>
+<script language="javascript">
+$(document).ready(function(){
+
+		$(function(){
+			$('form').jqTransform();
+		});
+		 $(".footer ul li a").textShadow();		
+});
+	</script>
+</head>
+
+<body>
+
+	<div class="statusBar">
+		<div class="controls">
+			<div class="songTime">
+				<p class="txt11">Wake Up Smiling</p>
+				<p class="timeSec"><span class="greyTxt">04:21-</span><span>00:12</span></p>
+			</div>
+			<div class="btnCont">
+				<ul>
+					<li><a href="#" class="share">share</a></li>
+					<li><a href="#" class="nxtList">nextList</a></li>
+					<li><a href="#" class="pauseList">pauseList</a></li>
+					<li><a href="#" class="infoBtn">Info</a></li>
+				</ul>
+				<div class="rhtSec">
+					<form>
+						<div class="songNmae">
+						<select>
+							<option>cha cha jwells</option>
+							<option></option>
+							<option></option>
+						</select>
+						</div>
+					</form>
+				<div class="notify"><a href="#">Notify</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="lftSection">
+			<ul>
+				<li><a href="#" class="manImg">man</a></li>
+				<li><a href="#" class="music">music</a><span class="blue">+</span></li>
+				<li><a href="#" class="arrowBtn">arrow</a><span class="blue">4</span></li>
+				<li><a href="#" class="homeBtn">home</a><span class="blue orangeBg">2</span></li>
+			</ul>
+		</div>
+		<div class="playerControl">
+			<ul>
+				<li><a href="#" class="shuffle">shuffle</a></li>
+				<li><a href="#" class="shuffle1">shuffle1</a></li>
+				<li><a href="#" class="forward">forward</a></li>
+				<li><a href="#" class="play">play</a></li>
+				<li><a href="#" class="backward">backward</a></li>
+			</ul>
+		</div>
+		<div class="genere">              
+			<a class="search" href="#"><img src="images/search.png" /></a>
+			<form action="post.php" method="POST">
+				<select name="select">
+				<option value="">Genre</option>
+				<option value="opt1">Genre</option>
+				</select>
+			</form>
+		</div>
+	</div>   
+	
+	<div class="footer">
+		<ul>
+			<li><a href="#" class="download1">BtnLink</a></li>
+			<li><a href="#" class="login" title="Login">Login</a></li>
+			<li><a href="#" class="createAccount" title="Create Account">Create Account</a></li>
+		</ul>
+		<div class="logoImg">
+			<span><img src="images/companyLogo.png" /></span>
+		</div>
+		<div class="version">dmm, co.©2012 Version 9.0</div>
+	</div>
+	
+</body>
+</html>
